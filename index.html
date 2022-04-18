@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9fcb5d40d2.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Elenoir NFT</title>
+  <link rel="icon" type="image/jpg" href="/build/images/elenoir.jpg" />
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="/build/main.css">
+  <link rel="stylesheet" href="/build/style.css">
+  <script src="/build/main.js"></script>
+  
+</head>
+<body class="hidesb">
+    <nav class="flex items-center justify-between flex-wrap p-6 fixed w-full z-10 top-0 navbg">
+		<div>
+			<a class="zoom" href="#">
+				<img class="zoom floatdown" src="build/images/yusha.png" width="140px" margin-right="40px" style="border-radius: 0 0 50% 50%">
+			</a>
+		</div>
+
+		<div class="block lg:hidden">
+			<button id="nav-toggle" style="background-color: transparent;"class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-gray-500 hover:border-gray-600">
+				<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+			</button>
+		</div>
+
+		<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content" align="right">
+			<ul class="list-reset lg:flex justify-end flex-1 items-center">
+				<li class="mr-3">
+					<a class="inline-block py-2 px-4 zoom" href="https://discord.gg/gcgFz9Kwg8"><i class="fa-brands fa-discord" style="color:#ff5656;"></i> ELENOIR</a>
+				</li>
+				<li class="mr-3">
+					<a class="inline-block py-2 px-4 zoom" href="https://twitter.com/ElenoirTeam" target="_blank"><i class="fa-brands fa-twitter" style="color:#ff5656;"></i> ElenoirTEAM</a>
+				</li>
+				<li class="mr-3">
+					<a class="inline-block py-2 px-4 zoom" href="https://instagram.com/elenoirnft" target="_blank"><i class="fa-brands fa-instagram" style="color:#ff5656;"></i> ElenoirNFT</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container shadow-lg mx-auto bg-white mt-24 md:mt-18">
+	</div>
+
+	<script>
+		document.getElementById('nav-toggle').onclick = function(){
+			document.getElementById("nav-content").classList.toggle("hidden");
+		}
+	</script>
+
+  <table id="home" background="/build/images/bg.png" border="0" style="background-repeat: no-repeat; background-position: right; background-size: cover;" cellpadding="0" cellspacing="0" align="center" data-aos="fade-down" data-aos-duration="800"> 
+      <tr style="height:850px">
+          <td>
+              <table border="0" width="95%" cellspacing="0" cellpadding="50px" align="center">
+                  <tr>
+                      <td align="left" valign="middle" colspan="2">
+                        <a class="anyong gradtext onmobi" style="font-size: 140px;">ELENOIR NFT</a>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td width="50%" valign="top">
+                        <font class="mochi" color="#fff" size="5"><b>DON'T MISS A CHANCE!</b></font>
+                        </font><br />
+                        <font class="mochi" color="#fff" size="4">
+                          Be the part of a sensational story and help us provide mana as much as we can to make Elenoir reborn. Discover 5.555 collections of superior ELENOIR NFT artwork.
+                        </font><br/><br/><br/>
+                          <button onclick="window.alert('Hold tight! Collection is not launched yet!')" class="primary mochi">Mint NOW!</button>
+                          <!--<button id="mint" class="primary mochi">Mint NOW!</button>-->
+                          <div id="minting" class="modal" style="border-radius: 20px 20px 0 0;">
+                          <div style="border-radius: 20px;" class="modal-content neon" id="minting-dapp">
+                            <span class="close"></span>
+                          </div>
+                          </div>
+                          <a style="margin: 10px;">or buy on</a>
+                          <button class="navbg primary mochi" onclick=" window.open('http://opensea.io','_blank')">Opensea</button>
+                          <div class="mouse_scroll" > 
+                            <div class="mouse">
+                                <div class="wheel"></div>
+                            </div>
+                            <div>
+                                <span class="m_scroll_arrows one"></span>
+                                <span class="m_scroll_arrows two"></span>
+                                <span class="m_scroll_arrows three"></span>
+                            </div>
+                          </div>
+                      </td>
+                      <td width="50%" valign="bottom">
+                      </td>
+                  </tr>
+              </table>
+          </td>
+      </tr>
+      <tr>
+      </tr>
+  </table>
+
+  <div class="gap">
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div class="cont">
+<div class="scorri">
+  <ul class="tithome">
+    <li><div><img src="build/images/title.png"></div></li>
+    <li><div><img src="build/images/title.png"></div></li>
+    <li><div><img src="build/images/title.png"></div></li>
+  </ul>
+</div>
+</div>
+
+  <table id="story" cellspacing="0" align="center" class="navbg">
+    <tr>
+        <td>
+            <table class="mobi" width="40%" height="40%" cellpadding="15" cellspacing="0" align="center">
+                <tr valign="bottom">
+                    <td align="center" colspan="2">
+                        <font class="mochi" color="#ffffff" size="6">
+                        <b>THE STORY</b>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="brdr" style="background-color: #ff5656;">
+                       <font class="mochi mobfon" size="3" color="#ffffff" data-aos="zoom-in" data-aos-duration="1000">
+                        In 2446 the world is in chaos, humanity was powerless against superior entities coming from other universes. Mankind is forced to obey the will of invaders from other universes. The entity known as "Core hunter" as they're hunting for a core of a planet, committed undisputed destruction. At a time when humanity was desperate, a group of superhumans was formed thanks to the research of a scientist, they named the group  "ELENOIR".<br/> <br/> <br/>Resistance ensued and ended with the victory of ELENOIR, after the Great War ended, the side effects of the experiment starting to show, the ELENOIR began to lose consciousness one by one, the scientist sealed the Elenoir using meteorites from space to hide their inconsistency from the world so the enemy wouldn't know. To awaken them in need the power of all mankind by sending mana to the meteorite that sealed the elenoirs. Elenoir will be reborn.
+                       </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+  <table id="collections" class="navbg" border="0" cellpadding="0" cellspacing="0" align="center">
+      <tr>
+          <td>
+              <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                  <tr>
+                      <td height="180" align="center" valign="middle" colspan="3">
+                              <font class="mochi" color="#ffffff" size="6">
+                                   <b>FOUNDERS</b>
+                              </font>
+                      </td>
+                  </tr>
+                  <tr data-aos="fade-up" data-aos-duration="1000">
+                      <td width="33%">
+                        <div class="konten">
+                          <img src="build/images/col1.png" alt="Avatar" class="pp">
+                          <div class="ol">Dr. Disaster<br/>Project Leader</div>
+                        </div>
+                      </td>
+                      <td width="33%">
+                        <div class="konten">
+                          <img src="build/images/col2.png" alt="Avatar" class="pp">
+                          <div class="ol">Dr. Maniac<br/>Project Engineer</div>
+                        </div>
+                      </td>
+                      <td width="33%">
+                        <div class="konten">
+                          <img src="build/images/col3.png" alt="Avatar" class="pp">
+                          <div class="ol">Ilham<br/>Project Designer</div>
+                        </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          &nbsp;
+                      </td>
+                  </tr>
+                  <tr bgcolor="#ff5656">
+                    <td  align="center" valign="middle" colspan="3">
+                            <font class="mochi" color="#fff" size="6">
+                                 <b>Phase</b>
+                            </font>
+                            <hr width="70" color="#f3971b">
+                    </td>
+                </tr>
+                <tr bgcolor="#ff5656">
+                    <td width="33%" valign="top" align="center">
+                        <font class="mochi mobfon" color="#ffffff">
+                            <b align="center">Whitelist sale (15 MATIC)</b>
+                        </font>
+                        <font class="mochi mobfon" color="#c2c0c3">
+                          <h6 style="text-align: center;">Wanna get featured in whitelist sale? Share Elenoir NFT to your social media and submit your address.</h6>
+                        </font>
+                    </td>
+                    <td width="33%" valign="top" align="center">
+                        <font class="mochi mobfon" color="#ffffff">
+                            <b align="center">Pre-sale (30% off Public sale)</b>
+                        </font>
+                        <font class="mochi mobfon" color="#c2c0c3">
+                            <h6 style="text-align: center;">Get them fast at low cost! Pre-sale only last fot 24 hours don't miss one!</h6> 
+                        </font>
+                    </td>
+                    <td width="33%" valign="top" align="center">
+                        <font class="mochi mobfon" color="#ffffff">
+                            <b align="center">Public sale (30 MATIC)</b>
+                        </font>
+                        <font class="mochi mobfon" color="#c2c0c3">
+                          <h6 style="text-align: center;">Everyone can be Elenoir family and save the world together. Which Elenoir are you?</h6> 
+                        </font>
+                    </td>
+                </tr>
+                <tr bgcolor="#ff5656">
+                    <td colspan="3">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        &nbsp;
+                    </td>
+                </tr>
+              </table>
+          </td>
+      </tr>
+  </table>
+
+  <table id="roadmap" class="navbg" border="0" cellpadding="0" cellspacing="0" align="center">
+      <tr>
+          <td>
+              <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center" data-aos="fade-up">
+                  <tr>
+                      <td height="180" align="center" valign="middle" colspan="2">
+                          <font class="mochi" color="#fff" size="6">
+                          <b>ROADMAP</b>
+                          </font>
+                      </td>
+                  </tr>
+                  <tr data-aos="fade-up" data-aos-duration="1000">
+                      <td width="66%" valign="top">
+                         <font class="mochi"color="#fff">
+                              <li>Establish social media presense</li>
+                              <li>Discord Community Open</li>
+                              <li>Whitelisting with off-chain signing + on-chain decryption to verify whitelist</li>
+                              <li>Build Elenoir NFT smart contract and minting site</li>
+                              <li>Apply Launchpad to TofuNFT</li>
+                              <li>Sales time!</li>
+                              <li>List on Opensea (posibble to rarible or TofuNFT)</li>
+                              <li>More to be announced soon.</li>
+                         </font>
+                      </td>
+                      <td valign="top" class="onmobi">
+                          <img src="build/images/roadmap.png" alt="Achievements"  width="90%">
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          &nbsp;
+                      </td>
+                  </tr>
+                  
+              </table>
+          </td>
+          <tr>
+            <td align="center" valign="bottom">
+              <a href="#">
+                <font class="mochi" color="#ffffff" size="5"> BACK TO TOP </font>
+              </a>
+            </td>
+            <tr>
+              <td>
+                <font class="mochi" color="#ffffff"><h5>&nbsp;&nbsp;© 2022 ELENOIR TEAM</h5></font>
+              </td>
+          </tr>
+          </tr>
+      </tr>
+  </table>
+
+  <div class="gap">
+</div>
+<div class="progress-container z-10 bottom-0">
+    <div class="progress-bar z-10 bottom-0" id="progbar"></div>
+</div>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    var modal = document.getElementById("minting");
+    var btn = document.getElementById("mint");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("progbar").style.width = scrolled + "%";
+    }
+  </script>
+
+<script>
+    var elements = $('ul.tithome li').length;
+
+for(var i=0;i < elements; i++){
+ $(".tithome").clone().prependTo( ".scorri" );
+};
+
+var liEle = [];
+var liEle = $(".tithome li");
+  </script>
+
+</body>
+</html>
