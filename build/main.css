@@ -112,8 +112,14 @@ th {
   border-color: inherit
 }
 
-@media screen and (max-width:629px) {
+@media screen and (max-width:720px) {
   .onmobi {
+    display: none
+  }
+}
+
+@media screen and (min-width:720px) {
+  .ondesk {
     display: none
   }
 }
