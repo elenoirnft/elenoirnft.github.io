@@ -114,13 +114,17 @@ th {
 
 @media screen and (max-width:720px) {
   .onmobi {
-    display: none
+    display: none;
+    visibility: hidden;
+    max-height: 0;
   }
 }
 
 @media screen and (min-width:720px) {
   .ondesk {
-    display: none
+    display: none;
+    visibility: hidden;
+    max-height: 0;
   }
 }
 
