@@ -126,6 +126,7 @@ th {
     display: none;
     visibility: hidden;
     max-height: 0;
+    max-width: 0;
   }
 }
 
