@@ -64,20 +64,27 @@
                   </tr>
                   <tr>
                       <td width="50%" valign="top">
-                        <font class="mochi" color="#fff" size="5"><b>DON'T MISS A CHANCE!</b></font>
+                        <font class="mochi fshad" color="#fff" size="5"><b>DON'T MISS A CHANCE!</b></font>
                         </font><br />
-                        <font class="mochi" color="#fff" size="4">
+                        <font class="mochi fshad" color="#fff" size="4">
                           Be the part of a sensational story and help us provide mana as much as we can to make Elenoir reborn. Discover 5.555 collections of superior ELENOIR NFT artwork.
                         </font><br/><br/><br/>
-                          <button onclick="window.alert('Hold tight! Collection is not launched yet!')" class="primary mochi">Mint NOW!</button>
-                          <!--<button id="mint" class="primary mochi">Mint NOW!</button>-->
+                        <div onclick="window.alert('Hold tight! Collection is not launched yet!')" class="mainbtn">
+                          MINT NOW!
+                          <div></div>
+                          <i class="fa fa-arrow-right"></i>
+                        </div>
                           <div id="minting" class="modal" style="border-radius: 20px 20px 0 0;">
                           <div style="border-radius: 20px;" class="modal-content neon" id="minting-dapp">
                             <span class="close"></span>
                           </div>
                           </div>
-                          <a style="margin: 10px;">or buy on</a>
-                          <button class="navbg primary mochi" onclick=" window.open('http://opensea.io','_blank')">Opensea</button>
+                          <a class="fshad" style="margin: 10px;">or buy on</a>
+                          <div onclick=" window.open('http://opensea.io','_blank')" class="mainbtn">
+                            Opensea
+                            <div></div>
+                            <i class="fa fa-shopping-cart"></i>
+                          </div>
                           <div class="mouse_scroll" > 
                             <div class="mouse">
                                 <div class="wheel"></div>
@@ -89,7 +96,7 @@
                             </div>
                           </div>
                       </td>
-                      <td width="50%" valign="bottom">
+                      <td class="onmobi" width="50%" valign="bottom">
                       </td>
                   </tr>
               </table>
@@ -141,94 +148,132 @@
 </table>
 
 
-  <table id="collections" class="navbg" border="0" cellpadding="0" cellspacing="0" align="center">
+  <table id="roadmap" class="navbg" width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
       <tr>
           <td>
-              <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
-                  <tr>
-                      <td height="180" align="center" valign="middle" colspan="3">
-                          <font class="mochi" color="#ffffff" size="6">
-                            <b>FOUNDERS</b>
-                          </font>
-                      </td>
-                  </tr>
-                  <tr class="onmobi" data-aos="fade-up" data-aos-duration="1000">
-                      <td width="33%">
-                        <div class="konten">
-                          <img src="build/images/col1.png" alt="Avatar" class="pp">
-                          <div class="ol">Dr. Disaster<br/>Project Leader</div>
-                        </div>
-                      </td>
-                      <td width="33%">
-                        <div class="konten">
-                          <img src="build/images/col2.png" alt="Avatar" class="pp">
-                          <div class="ol">Dr. Maniac<br/>Project Engineer</div>
-                        </div>
-                      </td>
-                      <td width="33%">
-                        <div class="konten">
-                          <img src="build/images/col3.png" alt="Avatar" class="pp">
-                          <div class="ol">Ilham<br/>Project Designer</div>
-                        </div>
-                      </td>
-                  </tr>
-              </table>
-              <div style="width: 80%; margin: auto;" class="konten ondesk">
-                <img src="build/images/col1.png" alt="Avatar" class="pp">
-                <div class="ol">Dr. Disaster<br/>Project Leader</div>
-              </div>
-              <div class="gap">
-              </div>
-              <div style="width: 80%; margin: auto;" class="konten ondesk">
-                <img src="build/images/col2.png" alt="Avatar" class="pp">
-                <div class="ol">Dr. Maniac<br/>Project Engineer</div>
-              </div>
-              <div class="gap">
-              </div>
-                <div style="width: 80%; margin: auto;" class="konten ondesk">
-                <img src="build/images/col3.png" alt="Avatar" class="pp">
-              <div class="ol">Ilham<br/>Project Designer</div>
-              </div>
+            <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center" data-aos="fade-up">
+              <tr>
+                  <td height="180" align="center" valign="middle" colspan="2">
+                      <font class="mochi" color="#fff" size="6">
+                      <b>ROADMAP</b>
+                      </font>
+                  </td>
+                </tr>
+                <tr data-aos="fade-up" data-aos-duration="1000">
+                  <td width="55%" valign="middle">
+                    <div class="accordion">
+                      <input type="radio" name="select" class="accordion-select" checked />
+                      <div class="accordion-title"><span>Phase 1: Build the Community</span></div>
+                      <div class="accordion-content">
+                        <font class="mochi" color="#000" size="5"><b>Build the Community</b></font>
+                        <br/>
+                        <br/>
+                        <dl>
+                          <li>Establish social media presence</li>
+                          <li>Discord Community Open</li>
+                          <li>Moderators recruitment</li>
+                          <li>DAO</li>
+                          <dd class="spce" >- The DAO will allow our members to have a voice where they can help us decide which direction the project is headed</dd>
+                          <dd class="spce" >- Specific Channels will be created on Discord where our members can vote towards future plans and ideas</dd>
+                          <dd class="spce" >- Create DAO/Community Wallet and make it public</dd>
+                          <dd class="spce" >- 10% of the mint revenue will be allocated to the Elenoir DAO/Community Wallet</dd>
+                          <dd class="spce" >- 20% of the all secondary royalties will be allocated to the Elenoir  DAO/Community Wallet</dd>
+                          <dd class="spce" >- All funds from Community wallet will be used for Community Giveaway, merch etc.</dd>
+                          <li>Whitelisting with merkle proof</li>
+                          <li>Build Elenoir NFT smart contract and minting site</li>
+                          <li>Apply Launchpad to TBA SITE</li>
+                          <li>Pre-sale for whitelister</li>
+                          <li>Public-sale with discount</li>
+                          <li>List on Opensea (posibble to rarible or TofuNFT)</li>
+                          <li>More to be announced.</li>
+                        </dl>
+                    </div> 
+                          <input type="radio" name="select" class="accordion-select" />
+                     <div class="accordion-title"><span>Phase 2: Utility</span></div>
+                     <div class="accordion-content">
+                        <font class="mochi" color="#000" size="5"><b>Utility</b></font>
+                        <br/>
+                        <br/>
+                        <dl>
+                          <li>100% sold, Create erc20 token $MANA</li>
+                          <li>Stake your Elenoir to generate $MANA</li>
+                          <li>$MANA can be used to BUY SERUM,inject this serum to elenoir and you will get Adult version of elenoir for free (Second collection)</li>
+                          <li>As the project and community develops, there will be even further utilization of $MANA</li>
+                        </dl>
+                     </div> 
+                          <input type="radio" name="select" class="accordion-select" />
+                     <div class="accordion-title"><span>Phase 3: TBA</span></div>
+                     <div class="accordion-content">Coming..</div> 
+                 </div> 
+                  </td>
+                  <td valign="middle" align="center" class="onmobi">
+                    <div style="width: 70%;" id="slider">
+                      <figure>
+                          <img src="./build/images/col1.png">
+                          <img src="./build/images/col2.png">
+                          <img src="./build/images/col3.png">
+                      </figure>
+                  </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      &nbsp;
+                  </td>
+              </tr>
+          </table>
           </td>
       </tr>
   </table>
 
-  <table id="roadmap" class="navbg" border="0" cellpadding="0" cellspacing="0" align="center">
+  <table id="founders" class="navbg" width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
       <tr>
           <td>
-              <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center" data-aos="fade-up">
-                  <tr>
-                      <td height="180" align="center" valign="middle" colspan="2">
-                          <font class="mochi" color="#fff" size="6">
-                          <b>ROADMAP</b>
-                          </font>
-                      </td>
-                  </tr>
-                  <tr data-aos="fade-up" data-aos-duration="1000">
-                      <td width="66%" valign="top">
-                         <font class="mochi"color="#fff">
-                              <li>Establish social media presense</li>
-                              <li>Discord Community Open</li>
-                              <li>Whitelisting with off-chain signing + on-chain decryption to verify whitelist</li>
-                              <li>Build Elenoir NFT smart contract and minting site</li>
-                              <li>Apply Launchpad to TofuNFT</li>
-                              <li>Sales time!</li>
-                              <li>List on Opensea (posibble to rarible or TofuNFT)</li>
-                              <li>More to be announced soon.</li>
-                         </font>
-                      </td>
-                      <td valign="top" class="onmobi">
-                          <img src="build/images/roadmap.png" alt="Achievements"  width="90%">
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>
-                          &nbsp;
-                      </td>
-                  </tr>
-                  
-              </table>
-          </td>
+            <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+              <tr>
+                  <td height="180" align="center" valign="middle" colspan="3">
+                      <font class="mochi" color="#ffffff" size="6">
+                        <b>FOUNDERS</b>
+                      </font>
+                  </td>
+              </tr>
+              <tr class="onmobi" data-aos="fade-up" data-aos-duration="1000">
+                  <td width="33%">
+                    <div class="konten">
+                      <img src="build/images/fndr1.png" alt="Avatar" class="pp">
+                      <div class="ol">Dr. Disaster<br/>Project Leader</div>
+                    </div>
+                  </td>
+                  <td width="33%">
+                    <div class="konten">
+                      <img src="build/images/fndr2.png" alt="Avatar" class="pp">
+                      <div class="ol">Dr. Maniac<br/>Project Engineer</div>
+                    </div>
+                  </td>
+                  <td width="33%">
+                    <div class="konten">
+                      <img src="build/images/fndr3.png" alt="Avatar" class="pp">
+                      <div class="ol">Ilham<br/>Project Designer</div>
+                    </div>
+                  </td>
+              </tr>
+          </table>
+          <div style="width: 80%; margin: auto;" class="konten ondesk">
+            <img src="build/images/fndr1.png" alt="Avatar" class="pp">
+            <div class="ol">Dr. Disaster<br/>Project Leader</div>
+          </div>
+          <div class="gap">
+          </div>
+          <div style="width: 80%; margin: auto;" class="konten ondesk">
+            <img src="build/images/fndr2.png" alt="Avatar" class="pp">
+            <div class="ol">Dr. Maniac<br/>Project Engineer</div>
+          </div>
+          <div class="gap">
+          </div>
+            <div style="width: 80%; margin: auto;" class="konten ondesk">
+            <img src="build/images/fndr3.png" alt="Avatar" class="pp">
+          <div class="ol">Ilham<br/>Project Designer</div>
+          </div></td>
           <tr>
             <td align="center" valign="bottom">
               <a href="#">
@@ -243,9 +288,6 @@
           </tr>
       </tr>
   </table>
-
-  <div class="gap">
-</div>
 <div class="progress-container z-10 bottom-0">
     <div class="progress-bar z-10 bottom-0" id="progbar"></div>
 </div>
