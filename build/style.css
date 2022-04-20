@@ -243,8 +243,20 @@
 }
 
 @media screen and (max-width:720px) {
+  .mobtn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:720px) {
   .mobi {
     width: 80%;
+  }
+}
+
+@media screen and (min-width:720px) {
+  .pc-bg {
+    background-image: url(./images/bg.png);
   }
 }
 
@@ -501,31 +513,6 @@
       1px -1px 0 #000,
       -1px 1px 0 #000,
        1px 1px 0 #000;
-  }
-
-  #slider {
-    overflow: hidden;
-  }
-  
-  @keyframes slider {
-    0% { left: 0; }
-    30% { left: 0; }
-    33% { left: -100%; }
-    63% { left: -100%; }
-    66% { left: -200%; }
-    95% { left: -200%; }
-    100% { left: 0; }
-  }
-  #slider figure {
-    width:300%;
-    position: relative;
-    animation: 9s slider infinite;
-  }
-  
-  #slider figure img {
-    width: 33.333333333%;
-    height : 100%;
-    float: left;
   }
 
     .mainbtn {
