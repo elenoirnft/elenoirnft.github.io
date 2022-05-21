@@ -12,7 +12,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;500&family=Cairo&display=swap" rel="stylesheet">
 
-  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="https://kit.fontawesome.com/9fcb5d40d2.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="/build/main.css">
@@ -27,15 +26,6 @@
   </nav>
 
 <body>
-
-  <!--Preloader-->
-  <div class="preloader">
-    <div class="loading">
-      <img src="/build/images/col.gif" class="rounded-full" width="100">
-      <h2 class=" uppercase text-center text-white cairo ">Loading...</h2>
-    </div>
-  </div>
-
 <div class="z-30 relative items-center justify-center w-full h-full overflow-auto">
   <div class="inset-0 h-screen bg-cover bg-center" style="background-image: url('/build/images/bg.png');"></div>
   <div class="absolute inset-0 z-20 flex items-center justify-center h-screen w-full bg-gray-900 bg-opacity-75"></div>
@@ -184,9 +174,6 @@
             </ul>
        </div>
    </div>
-
-   
-
 </body>
 
 <footer class="text-center bg-gray-900 text-white">
@@ -218,7 +205,6 @@
 </footer>
 
 <script>
-
   var cmodal = document.getElementById("minting")
   var btn = document.getElementById("mint");
 
@@ -235,19 +221,12 @@
     }
   }
 
-  $(document).ready(function(){
-  $(".preloader").fadeOut();
-  })
-
   function toggleModal(modalID){
     document.getElementById(modalID).classList.toggle("hidden");
     document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
     document.getElementById(modalID).classList.toggle("flex");
     document.getElementById(modalID + "-backdrop").classList.toggle("flex");
-  }
-
-
-  
+  } 
 </script>
 
 </html>
