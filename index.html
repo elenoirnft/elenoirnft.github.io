@@ -1,410 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/9fcb5d40d2.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Elenoir NFT</title>
-    <link rel="icon" type="image/jpg" href="/build/images/elenoir.jpg" />
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link rel="stylesheet" href="/build/main.css">
-    <link rel="stylesheet" href="/build/style.css">
-    <script src="/build/main.js"></script>
-  </head>
-  <body class="hidesb">
-    <nav class="flex items-center justify-between flex-wrap p-6 fixed w-full z-10 top-0 navbg">
-      <div>
-        <a class="zoom" href="#">
-        <img class="zoom floatdown" src="build/images/yusha.png" width="140px" margin-right="40px" style="border-radius: 0 0 50% 50%">
-        </a>
-      </div>
-      <div class="block lg:hidden">
-        <button id="nav-toggle" style="background-color: transparent;" class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-gray-500 hover:border-gray-600">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-      </div>
-      <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content" align="right">
-        <ul class="list-reset lg:flex justify-end flex-1 items-center">
-          <li class="mr-3">
-            <a class="inline-block py-2 px-4 zoom" href="https://discord.gg/gcgFz9Kwg8">
-            <i class="fa-brands fa-discord" style="color:#ff5656;"></i> ELENOIR </a>
-          </li>
-          <li class="mr-3">
-            <a class="inline-block py-2 px-4 zoom" href="https://twitter.com/ElenoirTeam" target="_blank">
-            <i class="fa-brands fa-twitter" style="color:#ff5656;"></i> ElenoirTEAM </a>
-          </li>
-          <li class="mr-3">
-            <a class="inline-block py-2 px-4 zoom" href="https://instagram.com/elenoirnft" target="_blank">
-            <i class="fa-brands fa-instagram" style="color:#ff5656;"></i> ElenoirNFT </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container shadow-lg mx-auto bg-white mt-24 md:mt-18"></div>
-    <script>
-      document.getElementById('nav-toggle').onclick = function() {
-        document.getElementById("nav-content").classList.toggle("hidden");
-      }
-    </script>
-    <table id="home" class="pc-bg" style="background-repeat: no-repeat; background-position: right; background-size: cover;" border="0" cellpadding="0" cellspacing="0" align="center" data-aos="fade-down" data-aos-duration="800">
-      <tr style="height:850px">
-        <td>
-          <table border="0" width="95%" cellspacing="0" cellpadding="20px" align="center">
-            <tr>
-              <td align="left" valign="middle" colspan="2">
-                <a class="anyong gradtext onmobi" style="font-size: 140px;">ELENOIR NFT</a>
-              </td>
-            </tr>
-            <tr>
-              <td width="50%" valign="top">
-                <font class="mochi fshad mobfon" color="#fff" size="5">
-                <b>DON'T MISS A CHANCE!</b>
-                </font>
-                </font>
-                <br />
-                <font class="mochi fshad mobfon" color="#fff" size="4"> Be the part of a sensational story and help us provide mana as much as we can to make Elenoir reborn. Discover 5.555 collections of superior ELENOIR NFT artwork.<br/><br/>Share Elenoir to get whitelisted! </font>
-                <br />
-                <br />
-                <img src="/build/images/col.gif" style="border-radius: 50%" class="ondesk">
-                <br />
-                <script src="https://sheetdb.io/s/f/fu0stt7itj2ax.js"></script>
-                <!--<div onclick="window.alert('Hold tight! Collection is not launched yet!')" class="mainbtn mobtn">
-                  MINT NOW! 
-                  <div></div>
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-                <div id="minting" class="modal" style="border-radius: 20px 20px 0 0;">
-                  <div style="border-radius: 20px;" class="modal-content neon" id="minting-mobtn">
-                    <span class="close"></span>
-                  </div>
-                </div>
-                <a class="fshad mobfon" style="margin: 10px;">or buy on</a>
-                <div onclick=" window.open('http://opensea.io','_blank')" class="mainbtn mobtn">
-                  Opensea 
-                  <div></div>
-                  <i class="fa fa-shopping-cart"></i>
-                </div>-->
-                
-              </td>
-              <td class="onmobi" width="50%" valign="bottom">
-                <div class="mouse_scroll">
-                  <div class="mouse">
-                    <div class="wheel"></div>
-                  </div>
-                  <div>
-                    <span class="m_scroll_arrows one"></span>
-                    <span class="m_scroll_arrows two"></span>
-                    <span class="m_scroll_arrows three"></span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr></tr>
-    </table>
-    <div class="gap"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <div class="cont">
-      <div class="scorri">
-        <ul class="tithome">
-          <li>
-            <div>
-              <img src="build/images/title.png">
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="build/images/title.png">
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="build/images/title.png">
-            </div>
-          </li>
-        </ul>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title></title>
+  <link rel="icon" type="image/png" href="/build/images/elenoir.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;500&family=Cairo&display=swap" rel="stylesheet">
+
+  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/9fcb5d40d2.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/build/main.css">
+  <script src="/build/main.js"></script>
+</head>
+<body>
+
+  <!--Preloader-->
+  <div class="preloader">
+    <div class="loading">
+      <img src="/build/images/col.gif" class="rounded-full" width="100">
+      <h2 class=" uppercase text-center text-white cairo ">Loading...</h2>
     </div>
-    <table id="story" cellspacing="0" align="center" class="navbg">
-      <tr>
-        <td>
-          <table class="mobi" width="40%" height="40%" cellpadding="15" cellspacing="0" align="center">
-            <tr valign="bottom">
-              <td align="center" colspan="2">
-                <font class="mochi" color="#ffffff" size="6">
-                <b>THE STORY</b>
-                </font>
-              </td>
-            </tr>
-            <tr>
-              <td class="brdr" style="background-color: #ff5656;">
-                <font class="mochi mobfon" size="3" color="#ffffff" style="letter-spacing: 1px;" data-aos="zoom-in" data-aos-duration="1000"> In 2446 the world is in chaos, humanity was powerless against superior entities coming from other universes. Mankind is forced to obey the will of invaders from other universes. The entity known as "Core hunter" as they're hunting for a core of a planet, committed undisputed destruction. At a time when humanity was desperate, a group of superhumans was formed thanks to the research of a scientist, they named the group "ELENOIR". <br />
-                <br />
-                <br />Resistance ensued and ended with the victory of ELENOIR, after the Great War ended, the side effects of the experiment starting to show, the ELENOIR began to lose consciousness one by one, the scientist sealed the Elenoir using meteorites from space to hide their inconsistency from the world so the enemy wouldn't know. To awaken them in need the power of all mankind by sending mana to the meteorite that sealed the elenoirs. Elenoir will be reborn.
-                </font>
-              </td>
-            </tr>
-            <tr>
-              <td> &nbsp; </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <table id="roadmap" class="navbg" width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
-      <tr>
-        <td>
-          <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center" data-aos="fade-up">
-            <tr>
-              <td height="180" align="center" valign="middle" colspan="2">
-                <font class="mochi" color="#fff" size="6">
-                <b>ROADMAP</b>
-                </font>
-              </td>
-            </tr>
-            <tr data-aos="fade-up" data-aos-duration="1000">
-              <td width="55%" valign="middle">
-                <div class="accordion onmobi">
-                  <input type="radio" name="select" class="accordion-select" checked />
-                  <div class="accordion-title">
-                    <span>Phase 1: Build the Community</span>
+  </div>
+
+<div class="z-30 relative items-center justify-center w-full h-full overflow-auto">
+  <div class="inset-0 h-screen bg-cover bg-center" style="background-image: url('/build/images/bg.png');"></div>
+  <div class="absolute inset-0 z-20 flex items-center justify-center h-screen w-full bg-gray-900 bg-opacity-75"></div>
+  <div class="absolute inset-0  z-30  flex flex-col items-center justify-center">
+      <div class="shadow-2xl rounded-lg w-4/5 h-96 bg-cover bg-center" style="background-image: url('/build/images/bg.gif');">
+          <div class="grid grid-cols-12 gap-1">
+              <div class="relative my-6 px-8 col-span-12 sm:col-span-12 md:col-span-7 lg:col-span-7 xxl:col-span-7">
+                  <div class="border-l-4 border-gray-400 py-20 px-5 mx-2 absolute left-0">
+                      <p class="italic text-white text-xl md:text-4xl lg:text-6xl uppercase text-center  font-semibold cairo">
+                          5.555 Collectible NFT Artwork
+                      </p>
                   </div>
-                  <div class="accordion-content">
-                    <font class="mochi" color="#000" size="5">
-                    <b>Build the Community</b>
-                    </font>
-                    <br />
-                    <br />
-                    <dl>
-                      <li>Establish social media presence</li>
-                      <li>Discord Community Open</li>
-                      <li>Moderators recruitment</li>
-                      <li>DAO</li>
-                      <dd class="spce">- The DAO will allow our members to have a voice where they can help us decide which direction the project is headed</dd>
-                      <dd class="spce">- Specific Channels will be created on Discord where our members can vote towards future plans and ideas</dd>
-                      <dd class="spce">- Create DAO/Community Wallet and make it public</dd>
-                      <dd class="spce">- 10% of the mint revenue will be allocated to the Elenoir DAO/Community Wallet</dd>
-                      <dd class="spce">- 20% of the all secondary royalties will be allocated to the Elenoir DAO/Community Wallet</dd>
-                      <dd class="spce">- All funds from Community wallet will be used for Community Giveaway, merch etc.</dd>
-                      <li>Whitelisting with merkle proof</li>
-                      <li>Build Elenoir NFT smart contract and minting site</li>
-                      <li>Apply Launchpad to TBA SITE</li>
-                      <li>Pre-sale for whitelister</li>
-                      <li>Public-sale with discount</li>
-                      <li>List on Opensea (posibble to rarible or TofuNFT)</li>
-                      <li>More to be announced.</li>
-                    </dl>
+                  <div class="text-gray-400 font-semibold text-xl mb-4 cairo">英雄 ELENOIR</div>
+                  <div class="absolute border-gray-400 border-t-4 bottom-0 py-1 px-4 w-4/5"></div>
+              </div>
+              <div class="col-span-12 sm:col-span-12 md:col-span-5 lg:col-span-5 xxl:col-span-5">
+                  <div class="relative bg-pink-900 h-full md:h-96 w-full bg-opacity-50 rounded-tr-lg rounded-br-lg">
+                      <div class="p-8">
+                          <p class="text-white text-xs md:text-sm lg:text-lg mb-4 akhsar">
+                            In 2446 the world is in chaos, humanity was powerless against superior entities coming from other universes. Mankind is forced to obey the will of invaders from other universes. Humanity was desperate. Thanks to the research of scientists, a group of superhumans were formed.  they named the group "ELENOIR".
+                            <br/>
+                            <br/>
+                            After the victory of a Great War the side effects of the experiment starting to show, ELENOIR began to lose consciousness. Scientists sealed ELENOIR using meteorites from space to hide their inconsistency from the world so the enemy wouldn't know. To awaken them needs the power of all mankind to send mana for the meteorites. ELENOIR will be reborn.
+                          </p>
+                          <div class="bottom-0 absolute p-2 right-0">
+                            <button id="form" class="opacity-75 bg-gray-100 hover:bg-pink-900 hover:text-white text-sm font-bold py-2 px-4 rounded inline-flex items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 2v20h-20v-20h20zm2-2h-24v24h24v-24zm-4 7h-8v1h8v-1zm0 5h-8v1h8v-1zm0 5h-8v1h8v-1zm-10.516-11.304l-.71-.696-2.553 2.607-1.539-1.452-.698.71 2.25 2.135 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304z" />
+                              </svg>
+                              <span>WHITELIST</span>
+                            </button> 
+                            <div id="forminput" class="cmodal">
+                              <div class="cmodal-content">
+                                <script src="https://sheetdb.io/s/f/38ycq2xo8xh00.js"></script>
+                                <span class="close"></span>
+                              </div>
+                            </div>
+                              <button id="mint" class="opacity-75 bg-gray-100 hover:bg-pink-900 hover:text-white text-sm font-bold py-2 px-4 rounded inline-flex items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M24 12l-12-9v5h-12v8h12v5l12-9z" />
+                                  </svg>
+                                  <span>MINT NOW</span>
+                              </button> 
+                          </div>
+                          <div id="minting" class="cmodal">
+                            <div class="cmodal-content" id="minting-dapp">
+                              <span class="close"></span>
+                            </div>
+                          </div>
+                      </div>
                   </div>
-                  <input type="radio" name="select" class="accordion-select" />
-                  <div class="accordion-title">
-                    <span>Phase 2: Utility</span>
-                  </div>
-                  <div class="accordion-content">
-                    <font class="mochi" color="#000" size="5">
-                    <b>Utility</b>
-                    </font>
-                    <br />
-                    <br />
-                    <dl>
-                      <li>100% sold, Create erc20 token $MANA</li>
-                      <li>Stake your Elenoir to generate $MANA</li>
-                      <li>$MANA can be used to BUY SERUM,inject this serum to elenoir and you will get Adult version of elenoir for free (Second collection)</li>
-                      <li>As the project and community develops, there will be even further utilization of $MANA</li>
-                    </dl>
-                  </div>
-                  <input type="radio" name="select" class="accordion-select" />
-                  <div class="accordion-title">
-                    <span>Phase 3: TBA</span>
-                  </div>
-                  <div class="accordion-content">Coming..</div>
+              </div>
+              <div class="mouse_scroll">
+
+                <div class="mouse">
+                  <div class="wheel"></div>
                 </div>
-                <div class="vaccordion ondesk">
-                  <p align="center" style="color: #fff;">Click to expand ↓</p>
-                  <input type="radio" name="select" class="vaccordion-select" />
-                  <div class="vaccordion-title mobfon">
-                    <span>Phase 1: Build the Community</span>
-                  </div>
-                  <div class="vaccordion-content mobfon">
-                    <font class="mochi" color="#000" size="5">
-                    <b>Build the Community</b>
-                    </font>
-                    <br />
-                    <br />
-                    <dl>
-                      <li>Establish social media presence</li>
-                      <li>Discord Community Open</li>
-                      <li>Moderators recruitment</li>
-                      <li>DAO</li>
-                      <dd class="spce">- The DAO will allow our members to have a voice where they can help us decide which direction the project is headed</dd>
-                      <dd class="spce">- Specific Channels will be created on Discord where our members can vote towards future plans and ideas</dd>
-                      <dd class="spce">- Create DAO/Community Wallet and make it public</dd>
-                      <dd class="spce">- 10% of the mint revenue will be allocated to the Elenoir DAO/Community Wallet</dd>
-                      <dd class="spce">- 20% of the all secondary royalties will be allocated to the Elenoir DAO/Community Wallet</dd>
-                      <dd class="spce">- All funds from Community wallet will be used for Community Giveaway, merch etc.</dd>
-                      <li>Whitelisting with merkle proof</li>
-                      <li>Build Elenoir NFT smart contract and minting site</li>
-                      <li>Apply Launchpad to TBA SITE</li>
-                      <li>Pre-sale for whitelister</li>
-                      <li>Public-sale with discount</li>
-                      <li>List on Opensea (posibble to rarible or TofuNFT)</li>
-                      <li>More to be announced.</li>
-                    </dl>
-                  </div>
-                  <input type="radio" name="select" class="vaccordion-select" />
-                  <div class="vaccordion-title mobfon">
-                    <span>Phase 2: Utility</span>
-                  </div>
-                  <div class="vaccordion-content mobfon">
-                    <font class="mochi" color="#000" size="5">
-                    <b>Utility</b>
-                    </font>
-                    <br />
-                    <br />
-                    <dl>
-                      <li>100% sold, Create erc20 token $MANA</li>
-                      <li>Stake your Elenoir to generate $MANA</li>
-                      <li>$MANA can be used to BUY SERUM,inject this serum to elenoir and you will get Adult version of elenoir for free (Second collection)</li>
-                      <li>As the project and community develops, there will be even further utilization of $MANA</li>
-                    </dl>
-                  </div>
-                  <input type="radio" name="select" class="vaccordion-select" />
-                  <div class="vaccordion-title mobfon">
-                    <span>Phase 3: TBA</span>
-                  </div>
-                  <div class="vaccordion-content mobfon">Coming..</div>
+                <div>
+                  <span class="m_scroll_arrows unu"></span>
+                  <span class="m_scroll_arrows doi"></span>
+                  <span class="m_scroll_arrows trei"></span>
                 </div>
-              </td>
-              <td valign="middle" align="center" class="onmobi">
-                <img src="/build/images/col.gif" width="70%">
-              </td>
-            </tr>
-            <tr>
-              <td> &nbsp; </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <table id="founders" class="navbg" width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
-      <tr>
-        <td>
-          <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
-            <tr>
-              <td height="180" align="center" valign="middle" colspan="3">
-                <font class="mochi" color="#ffffff" size="6">
-                <b>FOUNDERS</b>
-                </font>
-              </td>
-            </tr>
-            <tr class="onmobi" data-aos="fade-up" data-aos-duration="1000">
-              <td width="33%">
-                <div class="konten">
-                  <img src="build/images/fndr1.png" alt="Avatar" class="pp">
-                  <div class="ol">Dr. Disaster <br />Project Leader </div>
-                </div>
-              </td>
-              <td width="33%">
-                <div class="konten">
-                  <img src="build/images/fndr2.png" alt="Avatar" class="pp">
-                  <div class="ol">Dr. Maniac <br />Project Engineer </div>
-                </div>
-              </td>
-              <td width="33%">
-                <div class="konten">
-                  <img src="build/images/fndr3.png" alt="Avatar" class="pp">
-                  <div class="ol">Quantumrealm <br />Project Mediator </div>
-                </div>
-              </td>
-            </tr>
-          </table>
-          <div style="width: 80%; margin: auto;" class="konten ondesk">
-            <img src="build/images/fndr1.png" alt="Avatar" class="pp">
-            <div class="ol">Dr. Disaster <br />Project Leader </div>
+            </div>
           </div>
-          <div class="gap"></div>
-          <div style="width: 80%; margin: auto;" class="konten ondesk">
-            <img src="build/images/fndr2.png" alt="Avatar" class="pp">
-            <div class="ol">Dr. Maniac <br />Project Engineer </div>
-          </div>
-          <div class="gap"></div>
-          <div style="width: 80%; margin: auto;" class="konten ondesk">
-            <img src="build/images/fndr3.png" alt="Avatar" class="pp">
-            <div class="ol">Quantumrealm <br />Project Mediator </div>
-          </div>
-          <div class="gap"></div>
-        </td>
-      <tr>
-        <td align="center" valign="top">
-          <font class="mochi" color="#ffffff" size="5"> DISCORD MODERATORS </font><br/>
-          <h1 style="color: #fff">Maxim<br/>bloodvoodoo<br/>Taiyeofficial<br/><br/><br/><br/></h1>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" valign="bottom">
-          <a href="#">
-          <font class="mochi mobfon" color="#ffffff" size="5"> BACK TO TOP </font>
-          </a>
-        </td>
-      <tr>
-        <td>
-          <font class="mochi mobfon" color="#ffffff">
-            <h5>&nbsp;&nbsp;© 2022 ELENOIR TEAM</h5>
-          </font>
-        </td>
-      </tr>
-      </tr>
-      </tr>
-    </table>
-    <br/>
-    <div class="progress-container z-10 bottom-0">
-      <div class="progress-bar z-10 bottom-0" id="progbar"></div>
+      </div>
+  </div>
+  </div>
+
+  <div>
+    <p class="italic text-white text-xl md:text-4xl lg:text-6xl uppercase text-center  font-semibold cairo">
+      ROADMAP
+  </p>
+  </div>
+
+  <div class="py-10 container mx-auto px-5">
+       <div class="relative">
+           <div class="border-r-4 border-black absolute h-full top-0" style:{{ 'left': '9px' }}></div>
+           <ul class="list-none m-0 p-0">
+               <li class="mb-5  ">
+                   <div class="flex group items-center ">
+                       <div class="bg-red-400 group-hover:bg-red-700 z-10 rounded-full border-4 border-black  h-5 w-5">
+                           <div class="bg-black h-1 w-6 items-center  ml-4 mt-1"></div>
+                       </div>
+                       <div class="flex-1 ml-4 z-10 font-medium">
+                           <div class="order-1 space-y-2 bg-red-400 rounded-lg shadow-only transition-ease px-6 py-4">
+                               <h3 class="text-center mb-3 font-bold text-white text-2xl line-through cairo">BUILD THE COMMUNITY   <i class="fa-solid fa-circle-check"></i></h3>
+                               <p class="pb-4 text-sm text-gray-100 line-through cairo">PHASE I</p>
+                               <hr />
+                               <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 line-through akhsar">Build the community: Establish social media presence, open discord server and moderators recruitment, OG and WL spot fill up.</p>
+                           </div>
+                       </div>
+                   </div>
+               </li>
+               <li class="mb-5  ">
+                   <div class="flex group items-center ">
+                       <div class="bg-red-400 group-hover:bg-red-700 z-10 rounded-full border-4 border-black  h-5 w-5">
+                           <div class="bg-black h-1 w-6 items-center  ml-4 mt-1"></div>
+                       </div>
+                       <div class="flex-1 ml-4 z-10 font-medium">
+                           <div class="order-1 space-y-2 bg-red-400 rounded-lg shadow-only transition-ease px-6 py-4">
+                               <h3 class="text-center mb-3 font-bold text-white text-2xl line-through cairo">SMART CONTRACT DEPLOYMENT   <i class="fa-solid fa-circle-check"></i></h3>
+                               <p class="pb-4 text-sm text-gray-100 line-through cairo">PHASE II</p>
+                               <hr />
+                               <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 line-through akhsar">Deploys smart contract to ETH Block chain and configures dApp for ELENOIR minting. Mint date? TBA.</p>
+                           </div>
+                       </div>
+                   </div>
+                </li>
+                <li class="mb-5  ">
+                <div class="flex group items-center ">
+                    <div class="bg-red-400 group-hover:bg-red-700 z-10 rounded-full border-4 border-black  h-5 w-5">
+                        <div class="bg-black h-1 w-6 items-center  ml-4 mt-1"></div>
+                    </div>
+                    <div class="flex-1 ml-4 z-10 font-medium">
+                        <div class="order-1 space-y-2 bg-red-400 rounded-lg shadow-only transition-ease px-6 py-4">
+                            <h3 class="text-center mb-3 font-bold text-white text-2xl cairo">MINT TIME!   <i class="fa-solid fa-spinner"></i></h3>
+                            <p class="pb-4 text-sm text-gray-100 cairo">PHASE III</p>
+                            <hr />
+                            <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 akhsar">MINT DATE! Price? OG: Free 2 ELENOIR Mint, Whitelist: 0.008 ETH, Public: 0.02 ETH.</p>
+                        </div>
+                    </div>
+                </div>
+                </li>
+                <li class="mb-5  ">
+                  <div class="flex group items-center ">
+                      <div class="bg-red-400 group-hover:bg-red-700 z-10 rounded-full border-4 border-black  h-5 w-5">
+                          <div class="bg-black h-1 w-6 items-center  ml-4 mt-1"></div>
+                      </div>
+                      <div class="flex-1 ml-4 z-10 font-medium">
+                          <div class="order-1 space-y-2 bg-red-400 rounded-lg shadow-only transition-ease px-6 py-4">
+                              <h3 class="text-center mb-3 font-bold text-white text-2xl cairo">ON TO THE NEXT LEVEL   <i class="fa-solid fa-spinner"></i></h3>
+                              <p class="pb-4 text-sm text-gray-100 cairo">PHASE IV</p>
+                              <hr />
+                              <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 akhsar">Utility time! Staking? Merch? Coin? Guess!</p>
+                          </div>
+                      </div>
+                  </div>
+                </li>
+            </ul>
+       </div>
+   </div>
+
+   
+
+</body>
+
+<footer class="text-center bg-gray-900 text-white">
+  <div class="px-6 pt-6">
+    <div class="flex justify-center mb-6">
+      <a href="https://discord.gg/gcgFz9Kwg8" target="_blank" type="button" class="rounded-full text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+        <i class="fa-brands fa-discord items-center"></i>
+      </a>
+
+      <a href="https://twitter.com/ElenoirTeam" target="_blank" type="button" class="rounded-full text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+
+      <a href="https://www.instagram.com/elenoirnft/" target="_blank" type="button" class="rounded-full text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="https://opensea.io" target="_blank" type="button" class="rounded-full text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+        <i class="fa-solid fa-sailboat"></i>
+      </a>
+
     </div>
-    <script>
-      AOS.init();
-    </script>
-    <script>
-      var modal = document.getElementById("minting");
-      var btn = document.getElementById("mint");
-      var span = document.getElementsByClassName("close")[0];
-      btn.onclick = function() {
-        modal.style.display = "block";
-      }
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-    </script>
-    <script>
-      window.onscroll = function() {
-        myFunction()
-      };
-      
-      function myFunction() {
-        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-        document.getElementById("progbar").style.width = scrolled + "%";
-      }
-    </script>
-    <script>
-      var elements = $('ul.tithome li').length;
-      for (var i = 0; i < elements; i++) {
-        $(".tithome").clone().prependTo(".scorri");
-      };
-      var liEle = [];
-      var liEle = $(".tithome li");
-    </script>
-  </body>
+  </div>
+
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-whitehite" href="https://twitter.com/ElenoirTeam">ELENOIR TEAM</a>
+  </div>
+</footer>
+
+<script>
+  var cmodal = document.getElementById("minting");
+  var btn = document.getElementById("mint");
+  var span = document.getElementsByClassName("close")[0];
+  btn.onclick = function() {
+    cmodal.style.display = "block";
+  }
+  span.onclick = function() {
+    cmodal.style.display = "none";
+  }
+  window.onclick = function(event) {
+    if (event.target == cmodal) {
+      cmodal.style.display = "none";
+    }
+  }
+</script>
+<script>
+  var cmodal = document.getElementById("forminput");
+  var btn = document.getElementById("form");
+  var span = document.getElementsByClassName("close")[0];
+  btn.onclick = function() {
+    cmodal.style.display = "block";
+  }
+  span.onclick = function() {
+    cmodal.style.display = "none";
+  }
+  window.onclick = function(event) {
+    if (event.target == cmodal) {
+      cmodal.style.display = "none";
+    }
+  }
+</script>
+<script>
+  $(document).ready(function(){
+  $(".preloader").fadeOut();
+  })
+  </script>
+
 </html>

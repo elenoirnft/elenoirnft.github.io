@@ -1,4 +1,8 @@
 {
   "build/main.css": "/build/main.css",
-  "build/main.js": "/build/main.js"
+  "build/main.js": "/build/main.js",
+  "build/images/bg.gif": "/build/images/bg.gif",
+  "build/images/bg.png": "/build/images/bg.png",
+  "build/images/col.gif": "/build/images/col.gif",
+  "build/images/elenoir.png": "/build/images/elenoir.png"
 }
