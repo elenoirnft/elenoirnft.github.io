@@ -12,11 +12,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;500&family=Cairo&display=swap" rel="stylesheet">
 
+  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="https://kit.fontawesome.com/9fcb5d40d2.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="/build/main.css">
+  <script src="/build/main.js"></script>
 </head>
+
+  <nav class="cairo">
+    <a href="#">About</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="https://twitter.com/ElenoirTeam" target="_blank">Twitter</a>
+    <a href="https://discord.gg/gcgFz9Kwg8" target="_blank">Discord</a>
+  </nav>
+
 <body>
+
+  <!--Preloader-->
+  <div class="preloader">
+    <div class="loading">
+      <img src="/build/images/col.gif" class="rounded-full" width="100">
+      <h2 class=" uppercase text-center text-white cairo ">Loading...</h2>
+    </div>
+  </div>
+
 <div class="z-30 relative items-center justify-center w-full h-full overflow-auto">
   <div class="inset-0 h-screen bg-cover bg-center" style="background-image: url('/build/images/bg.png');"></div>
   <div class="absolute inset-0 z-20 flex items-center justify-center h-screen w-full bg-gray-900 bg-opacity-75"></div>
@@ -25,7 +44,7 @@
           <div class="grid grid-cols-12 gap-1">
               <div class="relative my-6 px-8 col-span-12 sm:col-span-12 md:col-span-7 lg:col-span-7 xxl:col-span-7">
                   <div class="border-l-4 border-gray-400 py-20 px-5 mx-2 absolute left-0">
-                      <p class="italic text-white text-xl md:text-4xl lg:text-6xl uppercase text-center  font-semibold cairo">
+                      <p class="italic text-white text-xl md:text-3xl lg:text-6xl uppercase text-center font-semibold cairo">
                           5.555 Collectible NFT Artwork
                       </p>
                   </div>
@@ -42,51 +61,58 @@
                             After the victory of a Great War the side effects of the experiment starting to show, ELENOIR began to lose consciousness. Scientists sealed ELENOIR using meteorites from space to hide their inconsistency from the world so the enemy wouldn't know. To awaken them needs the power of all mankind to send mana for the meteorites. ELENOIR will be reborn.
                           </p>
                           <div class="bottom-0 absolute p-2 right-0">
-                            <button id="form" class="opacity-75 bg-gray-100 hover:bg-pink-900 hover:text-white text-sm font-bold py-2 px-4 rounded inline-flex items-center">
+                            <button type="button" onclick="toggleModal('wl-modal')" class="opacity-75 bg-gray-100 hover:bg-pink-900 hover:text-white text-sm font-bold py-2 px-4 rounded inline-flex items-center">
                               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 2v20h-20v-20h20zm2-2h-24v24h24v-24zm-4 7h-8v1h8v-1zm0 5h-8v1h8v-1zm0 5h-8v1h8v-1zm-10.516-11.304l-.71-.696-2.553 2.607-1.539-1.452-.698.71 2.25 2.135 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304z" />
                               </svg>
                               <span>WHITELIST</span>
                             </button> 
-                            <div id="forminput" class="cmodal">
-                              <div class="cmodal-content">
-                                <script src="https://sheetdb.io/s/f/38ycq2xo8xh00.js"></script>
-                                <span class="close"></span>
+
+                            
+                            <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="wl-modal">
+                              <div class="relative w-auto my-6 mx-auto max-w-3xl">
+                                <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                  <div class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                                    <h3 class="text-3xl font-semibold">
+                                      Submit for whitelist spot
+                                    </h3>
+                                  </div>
+                                  <div class="relative p-6 flex-auto">
+                                    <script src="https://sheetdb.io/s/f/38ycq2xo8xh00.js"></script>
+                                  </div>
+                                  <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+                                    <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('wl-modal')">
+                                      Close
+                                    </button>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                              <button onclick="window.alert('Hold tight! Collection is not launched yet!')" class="opacity-75 bg-gray-100 hover:bg-pink-900 hover:text-white text-sm font-bold py-2 px-4 rounded inline-flex items-center">
+                            <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="wl-modal-backdrop"></div>
+                            
+
+                              <button id="mint" class="opacity-75 bg-gray-100 hover:bg-pink-900 hover:text-white text-sm font-bold py-2 px-4 rounded inline-flex items-center">
                                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M24 12l-12-9v5h-12v8h12v5l12-9z" />
                                   </svg>
                                   <span>MINT NOW</span>
                               </button> 
                           </div>
-                          <!--<div id="minting" class="cmodal">
+                          <div id="minting" class="cmodal">
                             <div class="cmodal-content" id="minting-dapp">
                               <span class="close"></span>
-                            </div>-->
+                            </div>
                           </div>
                       </div>
                   </div>
               </div>
-              <div class="mouse_scroll">
-
-                <div class="mouse">
-                  <div class="wheel"></div>
-                </div>
-                <div>
-                  <span class="m_scroll_arrows unu"></span>
-                  <span class="m_scroll_arrows doi"></span>
-                  <span class="m_scroll_arrows trei"></span>
-                </div>
-            </div>
           </div>
       </div>
   </div>
   </div>
 
   <div>
-    <p class="italic text-white text-xl md:text-4xl lg:text-6xl uppercase text-center  font-semibold cairo">
+    <p id="roadmap" class="italic text-white text-xl md:text-4xl lg:text-6xl uppercase text-center  font-semibold cairo">
       ROADMAP
   </p>
   </div>
@@ -164,8 +190,8 @@
 </body>
 
 <footer class="text-center bg-gray-900 text-white">
-  <div class="px-6 pt-6">
-    <div class="flex justify-center mb-6">
+  <div class="px-6 pt-3">
+    <div class="flex justify-center mb-1.5">
       <a href="https://discord.gg/gcgFz9Kwg8" target="_blank" type="button" class="rounded-full text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
         <i class="fa-brands fa-discord items-center"></i>
       </a>
@@ -185,15 +211,17 @@
     </div>
   </div>
 
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2022 Copyright:
+  <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Made with ❤️ by
     <a class="text-whitehite" href="https://twitter.com/ElenoirTeam">ELENOIR TEAM</a>
   </div>
 </footer>
 
 <script>
-  var cmodal = document.getElementById("minting");
+
+  var cmodal = document.getElementById("minting")
   var btn = document.getElementById("mint");
+
   var span = document.getElementsByClassName("close")[0];
   btn.onclick = function() {
     cmodal.style.display = "block";
@@ -206,21 +234,20 @@
       cmodal.style.display = "none";
     }
   }
+
+  $(document).ready(function(){
+  $(".preloader").fadeOut();
+  })
+
+  function toggleModal(modalID){
+    document.getElementById(modalID).classList.toggle("hidden");
+    document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
+    document.getElementById(modalID).classList.toggle("flex");
+    document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+  }
+
+
+  
 </script>
-<script>
-  var cmodal = document.getElementById("forminput");
-  var btn = document.getElementById("form");
-  var span = document.getElementsByClassName("close")[0];
-  btn.onclick = function() {
-    cmodal.style.display = "block";
-  }
-  span.onclick = function() {
-    cmodal.style.display = "none";
-  }
-  window.onclick = function(event) {
-    if (event.target == cmodal) {
-      cmodal.style.display = "none";
-    }
-  }
-</script>
+
 </html>
