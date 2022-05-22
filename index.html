@@ -23,9 +23,32 @@
     <a href="#roadmap">Roadmap</a>
     <a href="https://twitter.com/ElenoirTeam" target="_blank">Twitter</a>
     <a href="https://discord.gg/gcgFz9Kwg8" target="_blank">Discord</a>
+    <a href="#" onclick="toggleModal('vid-modal')">WATCH</a>
   </nav>
 
 <body>
+
+  <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="vid-modal">
+    <div class="relative w-auto my-6 mx-auto max-w-3xl">
+      <div class="border-0 shadow-lg relative flex flex-col w-full bg-red-400 outline-none focus:outline-none">
+        <div class="text-center p-2 border-b border-solid border-slate-200 rounded-t">
+          <h3 class="text-3xl uppercase font-semibold cairo">
+            Promotional Video
+          </h3>
+        </div>
+        <div class="relative p-6 flex-auto">
+          <iframe src="https://drive.google.com/file/d/1nzrda9sreQiSWdgFR5G_wuW-uGhGLrwT/preview" width="640" height="480" allow="autoplay"></iframe>
+        </div>
+        <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+          <button class="text-black cairo background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('vid-modal')">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="vid-modal-backdrop"></div>
+
 <div class="z-30 relative items-center justify-center w-full h-full overflow-auto">
   <div class="inset-0 h-screen bg-cover bg-center" style="background-image: url('/build/images/bg.png');"></div>
   <div class="absolute inset-0 z-20 flex items-center justify-center h-screen w-full bg-gray-900 bg-opacity-75"></div>
@@ -63,7 +86,7 @@
                               <div class="relative w-auto my-6 mx-auto max-w-3xl">
                                 <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                   <div class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-                                    <h3 class="text-3xl font-semibold">
+                                    <h3 class="text-3xl cairo font-semibold">
                                       Submit for whitelist spot
                                     </h3>
                                   </div>
@@ -71,7 +94,7 @@
                                     <script src="https://sheetdb.io/s/f/38ycq2xo8xh00.js"></script>
                                   </div>
                                   <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-                                    <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('wl-modal')">
+                                    <button class="text-red-500 cairo background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('wl-modal')">
                                       Close
                                     </button>
                                   </div>
