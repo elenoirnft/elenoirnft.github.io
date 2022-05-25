@@ -3,9 +3,11 @@
   "build/main.js": "/build/main.js",
   "build/images/bg.gif": "/build/images/bg.gif",
   "build/images/bg.png": "/build/images/bg.png",
-  "build/images/fndr3.png": "/build/images/fndr3.png",
-  "build/images/fndr1.png": "/build/images/fndr1.png",
+  "build/images/ele5.png": "/build/images/ele5.png",
+  "build/images/ele3.png": "/build/images/ele3.png",
+  "build/images/ele2.png": "/build/images/ele2.png",
+  "build/images/ele1.png": "/build/images/ele1.png",
   "build/images/col.gif": "/build/images/col.gif",
-  "build/images/fndr2.png": "/build/images/fndr2.png",
+  "build/images/ele4.png": "/build/images/ele4.png",
   "build/images/elenoir.png": "/build/images/elenoir.png"
 }

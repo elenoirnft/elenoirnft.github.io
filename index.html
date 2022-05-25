@@ -18,7 +18,7 @@
   <script src="/build/main.js"></script>
 </head>
 
-  <nav>
+  <nav class="bg-pink-900 bg-opacity-25 backdrop-blur-md invisible md:visible lg:text-base text-xs">
     <a href="#">About</a>
     <a href="#roadmap">Roadmap</a>
     <a href="#team">Team</a>
@@ -121,7 +121,7 @@
   </div>
 
   <div id="roadmap" class="container px-6 py-10 mx-auto">
-    <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">ROADMAP</h1>
+    <h1 class="text-3xl font-semibold text-center capitalize lg:text-4xl text-white">ROADMAP</h1>
   </div>
 
   <div class="py-10 container mx-auto px-5">
@@ -193,46 +193,66 @@
    </div>
 
 
-<section id="team" class="bg-white dark:bg-gray-900">
+<section id="team" class="bg-gray-900">
   <div class="container px-6 py-10 mx-auto">
-      <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">TEAM</h1>
+      <h1 class="text-3xl font-semibold text-center capitalize lg:text-4xl text-white">TEAM</h1>
       
-      <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-3 xl:grid-cols-3">
-          <div class="flex flex-col items-center p-8 transition-colors duration-200 transform group rounded-xl">
-              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/fndr1.png" alt="">
+      <div class="grid grid-cols-2 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+          <div class="flex flex-col items-center p-8 rounded-xl">
+              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele1.png" alt="">
               
-              <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Dr. Disaster</h1>
+              <h1 class="mt-4 text-2xl font-semibold capitalize text-white">Dr. Disaster</h1>
               
-              <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">Project Leader</p>
+              <p class="mt-2 capitalize text-center text-gray-300">Founder</p>
           </div>
 
-          <div class="flex flex-col items-center p-8 transition-colors duration-200 transform group rounded-xl">
-              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/fndr2.png" alt="">
+          <div class="flex flex-col items-center p-8 rounded-xl">
+              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele2.png" alt="">
               
-              <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Dr. Maniac</h1>
+              <h1 class="mt-4 text-2xl font-semibold capitalize text-white">Dr. Maniac</h1>
               
-              <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">Project Engineer</p>
+              <p class="mt-2 capitalize text-center text-gray-300">Co-Founder</p>
           </div>
 
-          <div class="flex flex-col items-center p-8 transition-colors duration-200 transform group rounded-xl">
-              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/fndr3.png" alt="">
+          <div class="flex flex-col items-center p-8 rounded-xl">
+              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele3.png" alt="">
               
-              <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">QuantummRealm</h1>
+              <h1 class="mt-4 text-2xl font-semibold capitalize text-white">QuantummRealm</h1>
               
-              <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">Media Representative</p>
+              <p class="mt-2 capitalize text-center text-gray-300">Media Representative</p>
           </div>
+
+          <div class="flex flex-col items-center p-8 rounded-xl">
+            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele4.png" alt="">
+            
+            <h1 class="mt-4 text-2xl font-semibold capitalize text-white">A. Ilham</h1>
+            
+            <p class="mt-2 capitalize text-center text-gray-300">Artist</p>
+        </div>
       </div>
 
-      <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">DISCORD MODS</h1>
+      <div class="grid grid-cols-2 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
+        <div class="flex flex-col items-center p-8 rounded-xl">
+            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele3.png" alt="">
+            
+            <h1 class="mt-4 text-2xl font-semibold capitalize text-white">Maxim</h1>
+            
+            <p class="mt-2 capitalize text-center text-gray-300">Discord Moderator</p>
+        </div>
 
-      <p class="mt-4 text-2xl font-semibold max-w-2xl mx-auto my-6 text-center text-gray-700 dark:text-white">
-        A. Ilham<br/>Wendell AKA Maxim<br/>bloodvoodoo
-      </p>
+        <div class="flex flex-col items-center p-8 rounded-xl">
+            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele4.png" alt="">
+            
+            <h1 class="mt-4 text-2xl font-semibold capitalize text-white">bloodvoodoo</h1>
+            
+            <p class="mt-2 capitalize text-center text-gray-300">Discord Moderator</p>
+        </div>
+
   </div>
 </section>
 
 
-   <footer class="text-center bg-gray-900 text-white">
+   <footer class="text-center text-white">
     <div class="px-6 pt-3">
       <div class="flex justify-center mb-1.5">
         <a href="https://discord.gg/gcgFz9Kwg8" target="_blank" type="button" class="rounded-full text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
