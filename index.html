@@ -18,12 +18,27 @@
   <script src="/build/main.js"></script>
 </head>
 
-  <nav class="bg-pink-900 bg-opacity-25 backdrop-blur-md invisible md:visible lg:text-base text-xs">
-    <a href="#">About</a>
-    <a href="#roadmap">Roadmap</a>
-    <a href="#team">Team</a>
-    <a href="https://discord.gg/gcgFz9Kwg8" target="_blank">Discord</a>
-    <a href="#" onclick="toggleModal('vid-modal')">Collection</a>
+  <nav class="backdrop-blur-md">
+    <a href="#">
+      <i class="fa-solid fa-house inline md:hidden"></i>
+      <span class="hidden md:inline lg:text-base text-xs">About</span>
+    </a>
+    <a href="#roadmap">
+      <i class="fa-solid fa-signs-post inline md:hidden"></i>
+      <span class="hidden md:inline lg:text-base text-xs">Roadmap</span>
+    </a>
+    <a href="#team">
+      <i class="fa-solid fa-people-group inline md:hidden"></i>
+      <span class="hidden md:inline lg:text-base text-xs">Team</span>
+    </a>
+    <a href="https://discord.gg/gcgFz9Kwg8" target="_blank">
+      <i class="fa-brands fa-discord inline md:hidden"></i>
+      <span class="hidden md:inline lg:text-base text-xs">Discord</span>
+    </a>
+    <a href="#" onclick="toggleModal('vid-modal')">
+      <i class="fa-solid fa-photo-film inline md:hidden"></i>
+      <span class="hidden md:inline lg:text-base text-xs">Collection</span>
+    </a>
   </nav>
 
 <body onload="loading()" style="margin:0;">
@@ -104,7 +119,7 @@
                                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M24 12l-12-9v5h-12v8h12v5l12-9z" />
                                   </svg>
-                                  <span>MINT NOW</span>
+                                  <span>MINT</span>
                               </button> 
                           </div>
                           <div id="minting" class="cmodal">
@@ -153,7 +168,7 @@
                                <h3 class="text-center mb-3 font-bold text-white text-2xl line-through">SMART CONTRACT DEPLOYMENT   <i class="fa-solid fa-circle-check"></i></h3>
                                <p class="pb-4 text-sm text-gray-100 line-through">PHASE II</p>
                                <hr />
-                               <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 line-through akhsar">Deploys smart contract to ETH Block chain and configures dApp for ELENOIR minting. Mint date? TBA.</p>
+                               <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 line-through akhsar">Deploys smart contract to ETH Block chain and configures dApp for ELENOIR minting.</p>
                            </div>
                        </div>
                    </div>
@@ -168,7 +183,7 @@
                             <h3 class="text-center mb-3 font-bold text-white text-2xl">MINT TIME!   <i class="fa-solid fa-spinner"></i></h3>
                             <p class="pb-4 text-sm text-gray-100">PHASE III</p>
                             <hr />
-                            <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 akhsar">MINT DATE! Price? OG: Free 2 ELENOIR Mint, Whitelist: 0.008 ETH, Public: 0.02 ETH.</p>
+                            <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 akhsar">MINT DATE: TBA. Price? OG: Free 2 ELENOIR Mint, Whitelist: 0.008 ETH, Public: 0.02 ETH.</p>
                         </div>
                     </div>
                 </div>
@@ -197,11 +212,11 @@
   <div class="container px-6 py-10 mx-auto">
       <h1 class="text-3xl font-semibold text-center capitalize lg:text-4xl text-white">TEAM</h1>
       
-      <div class="grid grid-cols-2 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+      <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
           <div class="flex flex-col items-center p-8 rounded-xl">
               <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele1.png" alt="">
               
-              <h1 class="mt-4 text-2xl font-semibold capitalize text-white">Dr. Disaster</h1>
+              <h1 class="mt-4 text-2xl font-semibold capitalize text-white text-center">Dr. Disaster</h1>
               
               <p class="mt-2 capitalize text-center text-gray-300">Founder</p>
           </div>
@@ -209,7 +224,7 @@
           <div class="flex flex-col items-center p-8 rounded-xl">
               <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele2.png" alt="">
               
-              <h1 class="mt-4 text-2xl font-semibold capitalize text-white">Dr. Maniac</h1>
+              <h1 class="mt-4 text-2xl font-semibold capitalize text-white text-center">Dr. Maniac</h1>
               
               <p class="mt-2 capitalize text-center text-gray-300">Co-Founder</p>
           </div>
@@ -217,7 +232,7 @@
           <div class="flex flex-col items-center p-8 rounded-xl">
               <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele3.png" alt="">
               
-              <h1 class="mt-4 text-2xl font-semibold capitalize text-white">QuantummRealm</h1>
+              <h1 class="mt-4 text-2xl font-semibold capitalize text-white text-center">QuantummRealm</h1>
               
               <p class="mt-2 capitalize text-center text-gray-300">Media Representative</p>
           </div>
@@ -225,25 +240,25 @@
           <div class="flex flex-col items-center p-8 rounded-xl">
             <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele4.png" alt="">
             
-            <h1 class="mt-4 text-2xl font-semibold capitalize text-white">A. Ilham</h1>
+            <h1 class="mt-4 text-2xl font-semibold capitalize text-white text-center">A. Ilham</h1>
             
             <p class="mt-2 capitalize text-center text-gray-300">Artist</p>
         </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
+      <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
         <div class="flex flex-col items-center p-8 rounded-xl">
-            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele3.png" alt="">
+            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele4.png" alt="">
             
-            <h1 class="mt-4 text-2xl font-semibold capitalize text-white">Maxim</h1>
+            <h1 class="mt-4 text-2xl font-semibold capitalize text-white text-center">Maxim</h1>
             
             <p class="mt-2 capitalize text-center text-gray-300">Discord Moderator</p>
         </div>
 
         <div class="flex flex-col items-center p-8 rounded-xl">
-            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele4.png" alt="">
+            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele5.png" alt="">
             
-            <h1 class="mt-4 text-2xl font-semibold capitalize text-white">bloodvoodoo</h1>
+            <h1 class="mt-4 text-2xl font-semibold capitalize text-white text-center">bloodvoodoo</h1>
             
             <p class="mt-2 capitalize text-center text-gray-300">Discord Moderator</p>
         </div>
