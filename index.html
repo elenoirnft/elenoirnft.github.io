@@ -17,6 +17,7 @@
 <nav class="backdrop-blur-md"> <a href="#"> <i class="fa-solid fa-house inline md:hidden"></i> <span class="hidden md:inline lg:text-base text-xs">About</span> </a> <a href="#roadmap"> <i class="fa-solid fa-signs-post inline md:hidden"></i> <span class="hidden md:inline lg:text-base text-xs">Roadmap</span> </a> <a href="#team"> <i class="fa-solid fa-people-group inline md:hidden"></i> <span class="hidden md:inline lg:text-base text-xs">Team</span> </a> <a href="#faq"> <i class="fa-solid fa-circle-question inline md:hidden"></i> <span class="hidden md:inline lg:text-base text-xs">FAQ</span> </a> <a href="#" onclick="toggleModal('vid-modal')"> <i class="fa-solid fa-photo-film inline md:hidden"></i> <span class="hidden md:inline lg:text-base text-xs">Collection</span> </a> </nav>
 
 <body onload="loading()" style="margin:0;">
+
   <div id="loader" class="rounded-full" style="background-image: url('/build/images/col.gif'); background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
   <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="vid-modal">
     <div class="relative w-auto my-6 mx-auto max-w-3xl">
@@ -29,8 +30,30 @@
   <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="vid-modal-backdrop"></div>
   <div style="display:none;" id="home" class="animate-bottom">
     <div class="z-30 relative items-center justify-center w-full h-full overflow-auto">
-      <div class="inset-0 h-screen bg-cover bg-center" style="background-image: url('/build/images/bg.png');"></div>
-      <div class="absolute inset-0 z-20 flex items-center justify-center h-screen w-full bg-gray-900 bg-opacity-75"></div>
+      <div class="inset-0 h-screen bg-cover bg-center" style="background-image: url('/build/images/bg.png');">
+        <div id="alert" class="alert pt-20 text-white">
+          <div class="ml-auto mr-3 flex flex-col gap-2 w-72 border-b-4 border-b-red-400">
+            <div class="bg-yellow-50 text-yellow-900 px-4 py-3" role="alert">
+              <div class="flex">
+                <div>
+                  <svg class="fill-current h-6 w-6 text-yellow-500 mr-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M13 14h-2V9h2m0 9h-2v-2h2M1 21h22L12 2L1 21z" /></svg>
+                </div>
+                <div>
+                  <p class="text-sm text-yellow-500">Please be aware of scamers! Always check the domain if it's not elenoir.io it's scam!</p>
+                </div>
+                <p class="flex cursor-pointer" type="button" onclick="toggleModal('alert')">
+                  <svg class="text-yellow-500 text-xl" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M685.4 354.8c0-4.4-3.6-8-8-8l-66 .3L512 465.6l-99.3-118.4-66.1-.3c-4.4 0-8 3.5-8 8 0 1.9.7 3.7 1.9 5.2l130.1 155L340.5 670a8.32 8.32 0 0 0-1.9 5.2c0 4.4 3.6 8 8 8l66.1-.3L512 564.4l99.3 118.4 66 .3c4.4 0 8-3.5 8-8 0-1.9-.7-3.7-1.9-5.2L553.5 515l130.1-155c1.2-1.4 1.8-3.3 1.8-5.2z"></path>
+                    <path d="M512 65C264.6 65 64 265.6 64 513s200.6 448 448 448 448-200.6 448-448S759.4 65 512 65zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path>
+                  </svg>
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+      <div class="absolute inset-0 z-20 flex items-center justify-center h-screen w-full bg-gray-900 bg-opacity-75">
+      </div>
       <div class="absolute inset-0  z-30  flex flex-col items-center justify-center">
         <div class="shadow-2xl rounded-lg w-4/5 h-96 bg-cover bg-center" style="background-image: url('/build/images/bg.gif');">
           <div class="grid grid-cols-12 gap-1">
