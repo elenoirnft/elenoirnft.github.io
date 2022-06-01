@@ -1,114 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <link rel="icon" type="image/png" href="/build/images/elenoir.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;500&family=Cairo&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/9fcb5d40d2.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/build/main.css">
-  <script src="/build/main.js"></script>
-</head>
-<nav class="backdrop-blur-md"> <a href="#"> <i class="fa-solid fa-house inline md:hidden"></i> <span class="hidden md:inline lg:text-base text-xs">About</span> </a> <a href="#roadmap"> <i class="fa-solid fa-signs-post inline md:hidden"></i> <span class="hidden md:inline lg:text-base text-xs">Roadmap</span> </a> <a href="#team"> <i class="fa-solid fa-people-group inline md:hidden"></i> <span class="hidden md:inline lg:text-base text-xs">Team</span> </a> <a href="#faq"> <i class="fa-solid fa-circle-question inline md:hidden"></i> <span class="hidden md:inline lg:text-base text-xs">FAQ</span> </a> <a href="#" onclick="toggleModal('vid-modal')"> <i class="fa-solid fa-photo-film inline md:hidden"></i> <span class="hidden md:inline lg:text-base text-xs">Glimpse</span> </a> </nav>
-
-<body onload="loading()" style="margin:0;">
-
-  <div id="loader"><h1 class="welcome">WELCOME HERO!</h1></div>
-  <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="vid-modal">
-    <div class="relative w-auto my-6 mx-auto max-w-3xl">
-      <div class="border-4 border-gray-700 relative flex flex-col w-full bg-red-400 outline-none focus:outline-none">
-        <div class="relative p-6 flex-auto"> <iframe src="https://drive.google.com/file/d/1iuMCMtsJZKkiZ5AyF7S3DH-d8Y7QY5RV/preview" width="410" height="260" allow="autoplay"></iframe> </div>
-        <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b"> <button class="text-black background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('vid-modal')"> Close </button> </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="icon" type="image/png" href="/build/images/elenoir.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;500&family=Cairo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9fcb5d40d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/build/main.css">
+    <script src="/build/main.js"></script>
+  </head>
+  <nav class="backdrop-blur-md">
+    <a href="#">
+      <i class="fa-solid fa-house inline md:hidden"></i>
+      <span class="hidden md:inline lg:text-base text-xs">About</span>
+    </a>
+    <a href="#roadmap">
+      <i class="fa-solid fa-signs-post inline md:hidden"></i>
+      <span class="hidden md:inline lg:text-base text-xs">Roadmap</span>
+    </a>
+    <a href="#team">
+      <i class="fa-solid fa-people-group inline md:hidden"></i>
+      <span class="hidden md:inline lg:text-base text-xs">Team</span>
+    </a>
+    <a href="#faq">
+      <i class="fa-solid fa-circle-question inline md:hidden"></i>
+      <span class="hidden md:inline lg:text-base text-xs">FAQ</span>
+    </a>
+    <a href="#" onclick="toggleModal('vid-modal')">
+      <i class="fa-solid fa-photo-film inline md:hidden animate-pulse"></i>
+      <span class="hidden md:inline lg:text-base text-xs animate-pulse">Glimpse</span>
+    </a>
+  </nav>
+  <body onload="loading()" style="margin:0;">
+    <div id="loader">
+      <h1 class="welcome">WELCOME HERO!</h1>
+    </div>
+    <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="vid-modal">
+      <div class="relative w-auto my-6 mx-auto max-w-3xl">
+        <div class="border-4 border-gray-700 relative flex flex-col w-full bg-red-400 outline-none focus:outline-none">
+          <div class="relative p-6 flex-auto">
+            <iframe src="https://drive.google.com/file/d/1ZcUihwPSoQJa-6dBtxK0wnoGL_l0PhrN/preview" width="410" height="260" allow="autoplay"></iframe>
+          </div>
+          <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+            <button class="text-black background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('vid-modal')"> Close </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="vid-modal-backdrop"></div>
-  <div style="display:none;" id="home" class="animate-bottom">
-    <div class="z-30 relative items-center justify-center w-full h-full overflow-auto">
-      <div class="inset-0 h-screen bg-cover bg-center" style="background-image: url('/build/images/bg.png');">
-        <div class="alert pt-20 ">
-          <div id="alert1" class="ml-auto mr-3 flex flex-col gap-2 w-72 border-b-4 border-b-red-400">
-            <div class="bg-yellow-50 text-yellow-900 px-4 py-3" role="alert">
-              <div class="flex">
-                <div>
-                  <svg class="fill-current h-6 w-6 text-yellow-500 mr-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M13 14h-2V9h2m0 9h-2v-2h2M1 21h22L12 2L1 21z" /></svg>
+    <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="vid-modal-backdrop"></div>
+    <div style="display:none;" id="home" class="animate-bottom">
+      <div class="z-30 relative items-center justify-center w-full h-full overflow-auto">
+        <div class="inset-0 h-screen bg-cover bg-center" style="background-image: url('/build/images/bg.png');">
+          <div class="alert pt-20 ">
+            <div id="alert1" class="ml-auto mr-3 flex flex-col gap-2 w-72 border-b-4 border-b-red-400">
+              <div class="bg-yellow-50 text-yellow-900 px-4 py-3" role="alert">
+                <div class="flex">
+                  <div>
+                    <svg class="fill-current h-6 w-6 text-yellow-500 mr-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                      <path d="M13 14h-2V9h2m0 9h-2v-2h2M1 21h22L12 2L1 21z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm text-yellow-500">Please be aware of scammers! Always check the domain. if it's not elenoir.io it's scam!</p>
+                  </div>
+                  <p class="flex cursor-pointer" type="button" onclick="toggleModal('alert1')">
+                    <svg class="text-yellow-500 text-xl" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M685.4 354.8c0-4.4-3.6-8-8-8l-66 .3L512 465.6l-99.3-118.4-66.1-.3c-4.4 0-8 3.5-8 8 0 1.9.7 3.7 1.9 5.2l130.1 155L340.5 670a8.32 8.32 0 0 0-1.9 5.2c0 4.4 3.6 8 8 8l66.1-.3L512 564.4l99.3 118.4 66 .3c4.4 0 8-3.5 8-8 0-1.9-.7-3.7-1.9-5.2L553.5 515l130.1-155c1.2-1.4 1.8-3.3 1.8-5.2z"></path>
+                      <path d="M512 65C264.6 65 64 265.6 64 513s200.6 448 448 448 448-200.6 448-448S759.4 65 512 65zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path>
+                    </svg>
+                  </p>
                 </div>
-                <div>
-                  <p class="text-sm text-yellow-500">Please be aware of scammers! Always check the domain. if it's not elenoir.io it's scam!</p>
-                </div>
-                <p class="flex cursor-pointer" type="button" onclick="toggleModal('alert1')">
-                  <svg class="text-yellow-500 text-xl" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M685.4 354.8c0-4.4-3.6-8-8-8l-66 .3L512 465.6l-99.3-118.4-66.1-.3c-4.4 0-8 3.5-8 8 0 1.9.7 3.7 1.9 5.2l130.1 155L340.5 670a8.32 8.32 0 0 0-1.9 5.2c0 4.4 3.6 8 8 8l66.1-.3L512 564.4l99.3 118.4 66 .3c4.4 0 8-3.5 8-8 0-1.9-.7-3.7-1.9-5.2L553.5 515l130.1-155c1.2-1.4 1.8-3.3 1.8-5.2z"></path>
-                    <path d="M512 65C264.6 65 64 265.6 64 513s200.6 448 448 448 448-200.6 448-448S759.4 65 512 65zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path>
-                  </svg>
-                </p>
               </div>
             </div>
-          </div>
-          <br/>
-          <div id="alert2" class="ml-auto mr-3 flex flex-col gap-2 w-72 border-b-4 border-b-red-400">
-            <div class="bg-yellow-50 text-yellow-900 px-4 py-3" role="alert">
-              <div class="flex">
-                <div>
-                  <svg class="fill-current h-6 w-6 text-yellow-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg>
+            <div id="alert2" class="ml-auto mr-3 flex flex-col gap-2 w-72 border-b-4 border-b-red-400">
+              <div class="bg-yellow-50 text-yellow-900 px-4 py-3" role="alert">
+                <div class="flex">
+                  <div>
+                    <svg class="fill-current h-6 w-6 text-yellow-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm text-yellow-500">Listen to <a href="https://twitter.com/itsblockparty" target="_blank">@itsblockparty</a> Podcast <a href="https://open.spotify.com/episode/5U7tZr9YlFJh8uHVs8sHE8?si=Ux9jhANfTgy9oo0T_l-xAA" target="_blank">HERE</a> to know ELENOIR Project deeper </p>
+                  </div>
+                  <p class="flex cursor-pointer" type="button" onclick="toggleModal('alert2')">
+                    <svg class="text-yellow-500 text-xl" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M685.4 354.8c0-4.4-3.6-8-8-8l-66 .3L512 465.6l-99.3-118.4-66.1-.3c-4.4 0-8 3.5-8 8 0 1.9.7 3.7 1.9 5.2l130.1 155L340.5 670a8.32 8.32 0 0 0-1.9 5.2c0 4.4 3.6 8 8 8l66.1-.3L512 564.4l99.3 118.4 66 .3c4.4 0 8-3.5 8-8 0-1.9-.7-3.7-1.9-5.2L553.5 515l130.1-155c1.2-1.4 1.8-3.3 1.8-5.2z"></path>
+                      <path d="M512 65C264.6 65 64 265.6 64 513s200.6 448 448 448 448-200.6 448-448S759.4 65 512 65zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path>
+                    </svg>
+                  </p>
                 </div>
-                <div>
-                  <p class="text-sm text-yellow-500">Listen to <a href="https://twitter.com/itsblockparty" target="_blank">@itsblockparty</a> Podcast <a href="https://open.spotify.com/episode/5U7tZr9YlFJh8uHVs8sHE8?si=Ux9jhANfTgy9oo0T_l-xAA" target="_blank">HERE</a> to know ELENOIR Project deeper</p>
+              </div>
+            </div>
+            <div id="alert3" class="ml-auto mr-3 flex flex-col gap-2 w-72 border-b-4 border-b-red-400">
+              <div class="bg-yellow-50 text-yellow-900 px-4 py-3" role="alert">
+                <div class="flex">
+                  <div>
+                    <svg class="fill-current h-6 w-6 text-yellow-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm text-yellow-500">We just launched our GENESIS Collection! <a href="https://twitter.com/ElenoirTeam/status/1531639750095998977?s=20&t=7oG_Mdft1N34N_2IpfXS0g" target="_blank">Read more</a></p>
+                  </div>
+                  <p class="flex cursor-pointer" type="button" onclick="toggleModal('alert3')">
+                    <svg class="text-yellow-500 text-xl" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M685.4 354.8c0-4.4-3.6-8-8-8l-66 .3L512 465.6l-99.3-118.4-66.1-.3c-4.4 0-8 3.5-8 8 0 1.9.7 3.7 1.9 5.2l130.1 155L340.5 670a8.32 8.32 0 0 0-1.9 5.2c0 4.4 3.6 8 8 8l66.1-.3L512 564.4l99.3 118.4 66 .3c4.4 0 8-3.5 8-8 0-1.9-.7-3.7-1.9-5.2L553.5 515l130.1-155c1.2-1.4 1.8-3.3 1.8-5.2z"></path>
+                      <path d="M512 65C264.6 65 64 265.6 64 513s200.6 448 448 448 448-200.6 448-448S759.4 65 512 65zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path>
+                    </svg>
+                  </p>
                 </div>
-                <p class="flex cursor-pointer" type="button" onclick="toggleModal('alert2')">
-                  <svg class="text-yellow-500 text-xl" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M685.4 354.8c0-4.4-3.6-8-8-8l-66 .3L512 465.6l-99.3-118.4-66.1-.3c-4.4 0-8 3.5-8 8 0 1.9.7 3.7 1.9 5.2l130.1 155L340.5 670a8.32 8.32 0 0 0-1.9 5.2c0 4.4 3.6 8 8 8l66.1-.3L512 564.4l99.3 118.4 66 .3c4.4 0 8-3.5 8-8 0-1.9-.7-3.7-1.9-5.2L553.5 515l130.1-155c1.2-1.4 1.8-3.3 1.8-5.2z"></path>
-                    <path d="M512 65C264.6 65 64 265.6 64 513s200.6 448 448 448 448-200.6 448-448S759.4 65 512 65zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path>
-                  </svg>
-                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="absolute inset-0 z-20 flex items-center justify-center h-screen w-full bg-gray-900 bg-opacity-75">
-      </div>
-      <div class="absolute inset-0  z-30  flex flex-col items-center justify-center">
-        <div class="shadow-2xl rounded-lg w-4/5 h-96 bg-cover bg-center" style="background-image: url('/build/images/bg.gif');">
-          <div class="grid grid-cols-12 gap-1">
-            <div class="relative my-6 px-8 col-span-12 sm:col-span-12 md:col-span-7 lg:col-span-7 xxl:col-span-7">
-              <div class="border-l-4 border-gray-400 py-20 px-5 mx-2 absolute left-0">
-                <p class="italic  text-base md:text-4xl lg:text-6xl uppercase text-center font-semibold"> 3.333 Collectible NFT Artwork </p>
+        <div class="absolute inset-0 z-20 flex items-center justify-center h-screen w-full bg-gray-900 bg-opacity-75"></div>
+        <div class="absolute inset-0  z-30  flex flex-col items-center justify-center">
+          <div class="shadow-2xl rounded-lg w-4/5 h-96 bg-cover bg-center" style="background-image: url('/build/images/bg.gif');">
+            <div class="grid grid-cols-12 gap-1">
+              <div class="relative my-6 px-8 col-span-12 sm:col-span-12 md:col-span-7 lg:col-span-7 xxl:col-span-7">
+                <div class="border-l-4 border-gray-400 py-20 px-5 mx-2 absolute left-0">
+                  <p class="italic  text-base md:text-4xl lg:text-6xl uppercase text-center font-semibold"> 3.333 Collectible NFT Artwork </p>
+                </div>
+                <div class="text-gray-400 font-semibold text-xl mb-4">英雄 ELENOIR</div>
+                <div class="absolute border-gray-400 border-t-4 bottom-0 py-1 px-4 w-4/5"></div>
               </div>
-              <div class="text-gray-400 font-semibold text-xl mb-4">英雄 ELENOIR</div>
-              <div class="absolute border-gray-400 border-t-4 bottom-0 py-1 px-4 w-4/5"></div>
-            </div>
-            <div class="col-span-12 sm:col-span-12 md:col-span-5 lg:col-span-5 xxl:col-span-5">
-              <div class="relative bg-pink-900 h-full md:h-96 w-full bg-opacity-50 rounded-tr-lg rounded-br-lg">
-                <div class="p-8">
-                  <p class=" text-xs md:text-sm lg:text-lg mb-4 akhsar"> In 2446 the world is in chaos, humanity was powerless against superior entities coming from other universes. Mankind is forced to obey the will of invaders from other universes. Humanity was desperate. Thanks to the research of scientists, a group of superhumans were formed. they named the group "ELENOIR". <br /> </p>
-                  <div class="bottom-0 absolute p-2 right-0"> <button type="button" onclick="toggleModal('wl-modal')" class="text-gray-900 opacity-75 bg-gray-100 hover:bg-pink-900 hover: text-sm font-bold py-2 px-4 rounded inline-flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 2v20h-20v-20h20zm2-2h-24v24h24v-24zm-4 7h-8v1h8v-1zm0 5h-8v1h8v-1zm0 5h-8v1h8v-1zm-10.516-11.304l-.71-.696-2.553 2.607-1.539-1.452-.698.71 2.25 2.135 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304z" />
-                      </svg> <span>WHITELIST</span> </button>
-                    <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="wl-modal">
-                      <div class="relative w-auto my-6 mx-auto max-w-3xl">
-                        <div class="border-4 border-gray-700 relative flex flex-col w-full bg-red-400 outline-none focus:outline-none">
-                          <div class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-                            <h3 class="text-3xl font-semibold uppercase text-center"> Submit for whitelist spot </h3>
+              <div class="col-span-12 sm:col-span-12 md:col-span-5 lg:col-span-5 xxl:col-span-5">
+                <div class="relative bg-pink-900 h-full md:h-96 w-full bg-opacity-50 rounded-tr-lg rounded-br-lg">
+                  <div class="p-8">
+                    <p class=" text-xs md:text-sm lg:text-lg mb-4 akhsar"> In 2446 the world is in chaos, humanity was powerless against superior entities coming from other universes. Mankind is forced to obey the will of invaders from other universes. Humanity was desperate. Thanks to the research of scientists, a group of superhumans were formed. they named the group "ELENOIR". <br />
+                    </p>
+                    <div class="bottom-0 absolute p-2 right-0">
+                      <button type="button" onclick="toggleModal('wl-modal')" class="text-gray-900 opacity-75 bg-gray-100 hover:bg-pink-900 hover: text-sm font-bold py-2 px-4 rounded inline-flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 2v20h-20v-20h20zm2-2h-24v24h24v-24zm-4 7h-8v1h8v-1zm0 5h-8v1h8v-1zm0 5h-8v1h8v-1zm-10.516-11.304l-.71-.696-2.553 2.607-1.539-1.452-.698.71 2.25 2.135 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304z" />
+                        </svg>
+                        <span>WHITELIST</span>
+                      </button>
+                      <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="wl-modal">
+                        <div class="relative w-auto my-6 mx-auto max-w-3xl">
+                          <div class="border-4 border-gray-700 relative flex flex-col w-full bg-red-400 outline-none focus:outline-none">
+                            <div class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                              <h3 class="text-3xl font-semibold uppercase text-center"> Submit for whitelist spot </h3>
+                            </div>
+                            <div class="relative p-6 flex-auto">
+                              <script src="https://sheetdb.io/s/f/hphhjnxow9gph.js"></script>
+                            </div>
+                            <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+                              <button class="text-black background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('wl-modal')"> Close </button>
+                            </div>
                           </div>
-                          <div class="relative p-6 flex-auto">
-                            <script src="https://sheetdb.io/s/f/hphhjnxow9gph.js"></script>
-                          </div>
-                          <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b"> <button class="text-black background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('wl-modal')"> Close </button> </div>
                         </div>
                       </div>
+                      <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="wl-modal-backdrop"></div>
+                      <button id="mint" class="text-gray-900 opacity-75 bg-gray-100 hover:bg-pink-900 hover: text-sm font-bold py-2 px-4 rounded inline-flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M24 12l-12-9v5h-12v8h12v5l12-9z" />
+                        </svg>
+                        <span>MINT</span>
+                      </button>
                     </div>
-                    <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="wl-modal-backdrop"></div> <button id="mint" class="text-gray-900 opacity-75 bg-gray-100 hover:bg-pink-900 hover: text-sm font-bold py-2 px-4 rounded inline-flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M24 12l-12-9v5h-12v8h12v5l12-9z" />
-                      </svg> <span>MINT</span> </button>
-                  </div>
-                  <div id="minting" class="cmodal">
-                    <div class="cmodal-content" id="minting-dapp"> <span class="close"></span> </div>
+                    <div id="minting" class="cmodal">
+                      <div class="cmodal-content" id="minting-dapp">
+                        <span class="close"></span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -116,202 +176,234 @@
           </div>
         </div>
       </div>
-    </div>
-    <div id="roadmap" class="container px-6 py-10 mx-auto">
-      <h1 class="text-3xl font-semibold text-center capitalize lg:text-4xl ">ROADMAP</h1>
-    </div>
-    <div class="py-10 container mx-auto px-5">
-      <div class="relative">
-        <div class="border-r-4 border-black absolute h-full top-0" style:{{ 'left': '9px' }}></div>
-        <ul class="list-none m-0 p-0">
-          <li class="mb-5  ">
-            <div class="flex group items-center ">
-              <div class="bg-red-400 group-hover:bg-red-700 z-10 rounded-full border-4 border-black  h-5 w-5">
-                <div class="bg-black h-1 w-6 items-center  ml-4 mt-1"></div>
-              </div>
-              <div class="flex-1 ml-4 z-10 font-medium">
-                <div class="order-1 space-y-2 bg-red-400 rounded-lg shadow-only transition-ease px-6 py-4">
-                  <h3 class="text-center mb-3 font-bold  text-2xl line-through">BUILD THE COMMUNITY <i class="fa-solid fa-circle-check"></i></h3>
-                  <p class="pb-4 text-sm text-gray-100 line-through">PHASE I</p>
-                  <hr />
-                  <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 line-through akhsar">Build the community: Establish social media presence, open discord server and moderators recruitment, OG and WL spot fill up.</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="mb-5  ">
-            <div class="flex group items-center ">
-              <div class="bg-red-400 group-hover:bg-red-700 z-10 rounded-full border-4 border-black  h-5 w-5">
-                <div class="bg-black h-1 w-6 items-center  ml-4 mt-1"></div>
-              </div>
-              <div class="flex-1 ml-4 z-10 font-medium">
-                <div class="order-1 space-y-2 bg-red-400 rounded-lg shadow-only transition-ease px-6 py-4">
-                  <h3 class="text-center mb-3 font-bold  text-2xl line-through">SMART CONTRACT DEPLOYMENT <i class="fa-solid fa-circle-check"></i></h3>
-                  <p class="pb-4 text-sm text-gray-100 line-through">PHASE II</p>
-                  <hr />
-                  <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 line-through akhsar">Deploys smart contract to ETH Block chain and configures dApp for ELENOIR minting.</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="mb-5  ">
-            <div class="flex group items-center ">
-              <div class="bg-red-400 group-hover:bg-red-700 z-10 rounded-full border-4 border-black  h-5 w-5">
-                <div class="bg-black h-1 w-6 items-center  ml-4 mt-1"></div>
-              </div>
-              <div class="flex-1 ml-4 z-10 font-medium">
-                <div class="order-1 space-y-2 bg-red-400 rounded-lg shadow-only transition-ease px-6 py-4">
-                  <h3 class="text-center mb-3 font-bold  text-2xl">MINT TIME! <i class="fa-solid fa-spinner"></i></h3>
-                  <p class="pb-4 text-sm text-gray-100">PHASE III</p>
-                  <hr />
-                  <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 akhsar">MINT DATE: TBA. Price? OG: Free 2 ELENOIR Mint, Whitelist: 0.008 ETH, Public: 0.02 ETH.</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="mb-5  ">
-            <div class="flex group items-center ">
-              <div class="bg-red-400 group-hover:bg-red-700 z-10 rounded-full border-4 border-black  h-5 w-5">
-                <div class="bg-black h-1 w-6 items-center  ml-4 mt-1"></div>
-              </div>
-              <div class="flex-1 ml-4 z-10 font-medium">
-                <div class="order-1 space-y-2 bg-red-400 rounded-lg shadow-only transition-ease px-6 py-4">
-                  <h3 class="text-center mb-3 font-bold  text-2xl">ON TO THE NEXT LEVEL <i class="fa-solid fa-spinner"></i></h3>
-                  <p class="pb-4 text-sm text-gray-100">PHASE IV</p>
-                  <hr />
-                  <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 akhsar">Utility time! Staking? Merch? Coin? Guess!</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+      <div id="roadmap" class="container px-6 py-10 mx-auto">
+        <h1 class="text-3xl font-semibold text-center capitalize lg:text-4xl ">ROADMAP</h1>
       </div>
-    </div>
-    <section id="team" class="bg-gray-900">
-      <div class="container px-6 py-10 mx-auto">
-        <h1 class="text-3xl font-semibold text-center capitalize lg:text-4xl ">TEAM</h1>
-        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
-          <div class="flex flex-col items-center p-8 rounded-xl"> <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele1.png" alt="">
-            <h1 class="mt-4 text-2xl font-semibold capitalize  text-center">Dr. Disaster</h1>
-            <p class="mt-2 capitalize text-center text-gray-300">Founder</p>
-          </div>
-          <div class="flex flex-col items-center p-8 rounded-xl"> <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele2.png" alt="">
-            <h1 class="mt-4 text-2xl font-semibold capitalize  text-center">Dr. Maniac</h1>
-            <p class="mt-2 capitalize text-center text-gray-300">Co-Founder</p>
-          </div>
-          <div class="flex flex-col items-center p-8 rounded-xl"> <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele3.png" alt="">
-            <h1 class="mt-4 text-2xl font-semibold capitalize  text-center">QuanntumRealm</h1>
-            <p class="mt-2 capitalize text-center text-gray-300">Media Representative</p>
-          </div>
-          <div class="flex flex-col items-center p-8 rounded-xl"> <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele4.png" alt="">
-            <h1 class="mt-4 text-2xl font-semibold capitalize  text-center">A. Ilham</h1>
-            <p class="mt-2 capitalize text-center text-gray-300">Artist</p>
-          </div>
+      <div class="py-10 container mx-auto px-5">
+        <div class="relative">
+          <div class="border-r-4 border-black absolute h-full top-0" style:{{ 'left': '9px' }}></div>
+          <ul class="list-none m-0 p-0">
+            <li class="mb-5  ">
+              <div class="flex group items-center ">
+                <div class="bg-red-400 group-hover:bg-red-700 z-10 rounded-full border-4 border-black  h-5 w-5">
+                  <div class="bg-black h-1 w-6 items-center  ml-4 mt-1"></div>
+                </div>
+                <div class="flex-1 ml-4 z-10 font-medium">
+                  <div class="order-1 space-y-2 bg-red-400 rounded-lg shadow-only transition-ease px-6 py-4">
+                    <h3 class="text-center mb-3 font-bold  text-2xl line-through">BUILD THE COMMUNITY <i class="fa-solid fa-circle-check"></i>
+                    </h3>
+                    <p class="pb-4 text-sm text-gray-100 line-through">PHASE I</p>
+                    <hr />
+                    <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 line-through akhsar">Build the community: Establish social media presence, open discord server and moderators recruitment, OG and WL spot fill up.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="mb-5  ">
+              <div class="flex group items-center ">
+                <div class="bg-red-400 group-hover:bg-red-700 z-10 rounded-full border-4 border-black  h-5 w-5">
+                  <div class="bg-black h-1 w-6 items-center  ml-4 mt-1"></div>
+                </div>
+                <div class="flex-1 ml-4 z-10 font-medium">
+                  <div class="order-1 space-y-2 bg-red-400 rounded-lg shadow-only transition-ease px-6 py-4">
+                    <h3 class="text-center mb-3 font-bold  text-2xl line-through">SMART CONTRACT DEPLOYMENT <i class="fa-solid fa-circle-check"></i>
+                    </h3>
+                    <p class="pb-4 text-sm text-gray-100 line-through">PHASE II</p>
+                    <hr />
+                    <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 line-through akhsar">Deploys smart contract to ETH Block chain and configures dApp for ELENOIR minting.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="mb-5  ">
+              <div class="flex group items-center ">
+                <div class="bg-red-400 group-hover:bg-red-700 z-10 rounded-full border-4 border-black  h-5 w-5">
+                  <div class="bg-black h-1 w-6 items-center  ml-4 mt-1"></div>
+                </div>
+                <div class="flex-1 ml-4 z-10 font-medium">
+                  <div class="order-1 space-y-2 bg-red-400 rounded-lg shadow-only transition-ease px-6 py-4">
+                    <h3 class="text-center mb-3 font-bold  text-2xl">MINT TIME! <i class="fa-solid fa-spinner"></i>
+                    </h3>
+                    <p class="pb-4 text-sm text-gray-100">PHASE III</p>
+                    <hr />
+                    <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 akhsar">MINT DATE: TBA. Price? OG: Free 2 ELENOIR Mint, Whitelist: 0.008 ETH, Public: 0.02 ETH.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="mb-5  ">
+              <div class="flex group items-center ">
+                <div class="bg-red-400 group-hover:bg-red-700 z-10 rounded-full border-4 border-black  h-5 w-5">
+                  <div class="bg-black h-1 w-6 items-center  ml-4 mt-1"></div>
+                </div>
+                <div class="flex-1 ml-4 z-10 font-medium">
+                  <div class="order-1 space-y-2 bg-red-400 rounded-lg shadow-only transition-ease px-6 py-4">
+                    <h3 class="text-center mb-3 font-bold  text-2xl">ON TO THE NEXT LEVEL <i class="fa-solid fa-spinner"></i>
+                    </h3>
+                    <p class="pb-4 text-sm text-gray-100">PHASE IV</p>
+                    <hr />
+                    <p class="text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100 akhsar">Utility time! Staking? Merch? Coin? Guess!</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
-          <div class="flex flex-col items-center p-8 rounded-xl"> <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele4.png" alt="">
-            <h1 class="mt-4 text-2xl font-semibold capitalize  text-center">Maxim</h1>
-            <p class="mt-2 capitalize text-center text-gray-300">Discord Moderator</p>
-          </div>
-          <div class="flex flex-col items-center p-8 rounded-xl"> <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele5.png" alt="">
-            <h1 class="mt-4 text-2xl font-semibold capitalize  text-center">bloodvoodoo</h1>
-            <p class="mt-2 capitalize text-center text-gray-300">Discord Moderator</p>
-          </div>
-        </div>
-    </section>
-    <div id="faq" class="section relative">
-      <div class="container xl:max-w-6xl mx-auto px-4">
+      </div>
+      <section id="team" class="bg-gray-900">
         <div class="container px-6 py-10 mx-auto">
-          <h1 class="text-3xl font-semibold text-center capitalize lg:text-4xl ">FAQ</h1>
-        </div>
-        <div class="flex flex-wrap flex-row -mx-4 text-center">
-          <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6">
-            <div class="py-8 px-12 mb-12 bg-red-400 border-4 border-gray-700">
-              <div class="inline-block text-4xl  mb-4"> <i class="fa-solid fa-shield-heart"></i> </div>
-              <h3 class="text-lg leading-normal mb-2 font-semibold ">What is ELENOIR</h3>
-              <p class="text-gray-300">ELENOIR is an anime-inspired NFT project.</p>
+          <h1 class="text-3xl font-semibold text-center capitalize lg:text-4xl ">TEAM</h1>
+          <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+            <div class="flex flex-col items-center p-8 rounded-xl">
+              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele1.png" alt="">
+              <h1 class="mt-4 text-2xl font-semibold capitalize  text-center">Dr. Disaster</h1>
+              <p class="mt-2 capitalize text-center text-gray-300">Founder</p>
+            </div>
+            <div class="flex flex-col items-center p-8 rounded-xl">
+              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele2.png" alt="">
+              <h1 class="mt-4 text-2xl font-semibold capitalize  text-center">Dr. Maniac</h1>
+              <p class="mt-2 capitalize text-center text-gray-300">Co-Founder</p>
+            </div>
+            <div class="flex flex-col items-center p-8 rounded-xl">
+              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele3.png" alt="">
+              <h1 class="mt-4 text-2xl font-semibold capitalize  text-center">QuanntumRealm</h1>
+              <p class="mt-2 capitalize text-center text-gray-300">Media Representative</p>
+            </div>
+            <div class="flex flex-col items-center p-8 rounded-xl">
+              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele4.png" alt="">
+              <h1 class="mt-4 text-2xl font-semibold capitalize  text-center">A. Ilham</h1>
+              <p class="mt-2 capitalize text-center text-gray-300">Artist</p>
             </div>
           </div>
-          <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6">
-            <div class="py-8 px-12 mb-12 bg-red-400 border-4 border-gray-700">
-              <div class="inline-block text-4xl  mb-4"> <i class="fa-brands fa-ethereum"></i> </div>
-              <h3 class="text-lg leading-normal mb-2 font-semibold ">Network</h3>
-              <p class="text-gray-300">ELENOIR NFT is on the Ethereum Blockchain Network.</p>
+          <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
+            <div class="flex flex-col items-center p-8 rounded-xl">
+              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele4.png" alt="">
+              <h1 class="mt-4 text-2xl font-semibold capitalize  text-center">Maxim</h1>
+              <p class="mt-2 capitalize text-center text-gray-300">Discord Moderator</p>
+            </div>
+            <div class="flex flex-col items-center p-8 rounded-xl">
+              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-red-400" src="/build/images/ele5.png" alt="">
+              <h1 class="mt-4 text-2xl font-semibold capitalize  text-center">bloodvoodoo</h1>
+              <p class="mt-2 capitalize text-center text-gray-300">Discord Moderator</p>
             </div>
           </div>
-          <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6">
-            <div class="py-8 px-12 mb-12 bg-red-400 border-4 border-gray-700">
-              <div class="inline-block text-4xl  mb-4"> <i class="fa-solid fa-hand-holding-dollar"></i> </div>
-              <h3 class="text-lg leading-normal mb-2 font-semibold ">Mint price</h3>
-              <p class="text-gray-300">0.008 For whitelist and 0.02 For public. OGs got 2 for free.</p>
-            </div>
+      </section>
+      <div id="faq" class="section relative">
+        <div class="container xl:max-w-6xl mx-auto px-4">
+          <div class="container px-6 py-10 mx-auto">
+            <h1 class="text-3xl font-semibold text-center capitalize lg:text-4xl ">FAQ</h1>
           </div>
-          <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6">
-            <div class="py-8 px-12 mb-12 bg-red-400 border-4 border-gray-700">
-              <div class="inline-block text-4xl  mb-4"> <i class="fa-solid fa-arrows-turn-to-dots"></i> </div>
-              <h3 class="text-lg leading-normal mb-2 font-semibold ">Minting scenario</h3>
-              <p class="text-gray-300">Public will always be open, OG And Whitelist will take turn.</p>
+          <div class="flex flex-wrap flex-row -mx-4 text-center">
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6">
+              <div class="py-8 px-12 mb-12 bg-red-400 border-4 border-gray-700">
+                <div class="inline-block text-4xl  mb-4">
+                  <i class="fa-solid fa-shield-heart"></i>
+                </div>
+                <h3 class="text-lg leading-normal mb-2 font-semibold ">What is ELENOIR</h3>
+                <p class="text-gray-300">ELENOIR is an anime-inspired NFT project.</p>
+              </div>
             </div>
-          </div>
-          <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6">
-            <div class="py-8 px-12 mb-12 bg-red-400 border-4 border-gray-700">
-              <div class="inline-block text-4xl  mb-4"> <i class="fa-solid fa-bullseye"></i> </div>
-              <h3 class="text-lg leading-normal mb-2 font-semibold ">Long-term goal</h3>
-              <p class="text-gray-300">Build positive community - Branding - Intellectual property.</p>
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6">
+              <div class="py-8 px-12 mb-12 bg-red-400 border-4 border-gray-700">
+                <div class="inline-block text-4xl  mb-4">
+                  <i class="fa-brands fa-ethereum"></i>
+                </div>
+                <h3 class="text-lg leading-normal mb-2 font-semibold ">Network</h3>
+                <p class="text-gray-300">ELENOIR NFT is on the Ethereum Blockchain Network.</p>
+              </div>
             </div>
-          </div>
-          <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6">
-            <div class="py-8 px-12 mb-12 bg-red-400 border-4 border-gray-700">
-              <div class="inline-block text-4xl  mb-4"> <i class="fa-solid fa-circle-question"></i> </div>
-              <h3 class="text-lg leading-normal mb-2 font-semibold ">Unanswered question?</h3>
-              <p class="text-gray-300">Join our discord and ask. We'll be there to answer.</p>
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6">
+              <div class="py-8 px-12 mb-12 bg-red-400 border-4 border-gray-700">
+                <div class="inline-block text-4xl  mb-4">
+                  <i class="fa-solid fa-hand-holding-dollar"></i>
+                </div>
+                <h3 class="text-lg leading-normal mb-2 font-semibold ">Mint price</h3>
+                <p class="text-gray-300">0.008 For whitelist and 0.02 For public. OGs got 2 for free.</p>
+              </div>
+            </div>
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6">
+              <div class="py-8 px-12 mb-12 bg-red-400 border-4 border-gray-700">
+                <div class="inline-block text-4xl  mb-4">
+                  <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                </div>
+                <h3 class="text-lg leading-normal mb-2 font-semibold ">Minting scenario</h3>
+                <p class="text-gray-300">Public will always be open, OG And Whitelist will take turn.</p>
+              </div>
+            </div>
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6">
+              <div class="py-8 px-12 mb-12 bg-red-400 border-4 border-gray-700">
+                <div class="inline-block text-4xl  mb-4">
+                  <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <h3 class="text-lg leading-normal mb-2 font-semibold ">Long-term goal</h3>
+                <p class="text-gray-300">Build positive community - Branding - Intellectual property.</p>
+              </div>
+            </div>
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6">
+              <div class="py-8 px-12 mb-12 bg-red-400 border-4 border-gray-700">
+                <div class="inline-block text-4xl  mb-4">
+                  <i class="fa-solid fa-circle-question"></i>
+                </div>
+                <h3 class="text-lg leading-normal mb-2 font-semibold ">Unanswered question?</h3>
+                <p class="text-gray-300">Join our discord and ask. We'll be there to answer.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <footer class="text-center  bg-gray-900">
+        <div class="px-6 pt-4">
+          <div class="flex justify-center">
+            <a href="https://discord.gg/gcgFz9Kwg8" target="_blank" type="button" class=" w-9 h-6">
+              <i class="fa-brands fa-discord items-center"></i>
+            </a>
+            <a href="https://twitter.com/ElenoirTeam" target="_blank" type="button" class=" w-9 h-6">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/elenoirnft/" target="_blank" type="button" class=" w-9 h-6">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://opensea.io" target="_blank" type="button" class=" w-9 h-6">
+              <i class="fa-solid fa-sailboat"></i>
+            </a>
+          </div>
+        </div>
+        <div class="text-center p-2"> © 2022 Made with ❤️ by <a class="hite" href="https://twitter.com/ElenoirTeam">ELENOIR TEAM</a>
+        </div>
+      </footer>
     </div>
-    <footer class="text-center  bg-gray-900">
-      <div class="px-6 pt-4">
-        <div class="flex justify-center"> <a href="https://discord.gg/gcgFz9Kwg8" target="_blank" type="button" class=" w-9 h-6"> <i class="fa-brands fa-discord items-center"></i> </a> <a href="https://twitter.com/ElenoirTeam" target="_blank" type="button" class=" w-9 h-6"> <i class="fa-brands fa-twitter"></i> </a> <a href="https://www.instagram.com/elenoirnft/" target="_blank" type="button" class=" w-9 h-6"> <i class="fa-brands fa-instagram"></i> </a> <a href="https://opensea.io" target="_blank" type="button" class=" w-9 h-6"> <i class="fa-solid fa-sailboat"></i> </a> </div>
-      </div>
-      <div class="text-center p-2"> © 2022 Made with ❤️ by <a class="hite" href="https://twitter.com/ElenoirTeam">ELENOIR TEAM</a> </div>
-    </footer>
-  </div>
-</body>
-<script>
-  var cmodal = document.getElementById("minting")
-  var btn = document.getElementById("mint");
-  
-  var span = document.getElementsByClassName("close")[0];
-  btn.onclick = function() {
-    cmodal.style.display = "block";
-  }
-  span.onclick = function() {
-    cmodal.style.display = "none";
-  }
-  window.onclick = function(event) {
-    if (event.target == cmodal) {
+  </body>
+  <script>
+    var cmodal = document.getElementById("minting")
+    var btn = document.getElementById("mint");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      cmodal.style.display = "block";
+    }
+    span.onclick = function() {
       cmodal.style.display = "none";
     }
-  }
-  
-  function toggleModal(modalID){
-    document.getElementById(modalID).classList.toggle("hidden");
-    document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
-    document.getElementById(modalID).classList.toggle("flex");
-    document.getElementById(modalID + "-backdrop").classList.toggle("flex");
-  }
-  
-  var preload;
-  
-  function loading() {
-  preload = setTimeout(showPage, 1300);
-  }
-  
-  function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("home").style.display = "block";
-  }
-</script>
+    window.onclick = function(event) {
+      if (event.target == cmodal) {
+        cmodal.style.display = "none";
+      }
+    }
 
+    function toggleModal(modalID) {
+      document.getElementById(modalID).classList.toggle("hidden");
+      document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
+      document.getElementById(modalID).classList.toggle("flex");
+      document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+    }
+    var preload;
+
+    function loading() {
+      preload = setTimeout(showPage, 1300);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("home").style.display = "block";
+    }
+  </script>
 </html>
