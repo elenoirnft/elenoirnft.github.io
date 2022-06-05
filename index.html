@@ -31,8 +31,9 @@
       <span class="hidden md:inline lg:text-base text-xs">FAQ</span>
     </a>
     <a href="#" onclick="toggleModal('vid-modal')">
-      <i class="fa-solid fa-photo-film inline md:hidden animate-pulse"></i>
-      <span class="hidden md:inline lg:text-base text-xs animate-pulse">Glimpse</span>
+      <i class="fa-solid fa-photo-film inline md:hidden"></i>
+      <span class="hidden md:inline lg:text-base text-xs">Glimpse</span>
+      <span class="animate-ping absolute top-1 -right-1 block h-1 w-1 rounded-full ring-2 ring-red-400 bg-red-600"></span>
     </a>
   </nav>
   <body onload="loading()" style="margin:0;">
@@ -42,11 +43,11 @@
     <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="vid-modal">
       <div class="relative w-auto my-6 mx-auto max-w-3xl">
         <div class="border-4 border-gray-700 relative flex flex-col w-full bg-red-400 outline-none focus:outline-none">
-          <div class="relative p-6 flex-auto">
+          <div class="relative flex-auto">
             <iframe src="https://drive.google.com/file/d/1ZcUihwPSoQJa-6dBtxK0wnoGL_l0PhrN/preview" width="410" height="260" allow="autoplay"></iframe>
           </div>
-          <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-            <button class="text-black background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('vid-modal')"> Close </button>
+          <div class="flex items-center justify-end p-2 border-t border-solid border-slate-200 rounded-b">
+            <button class="background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('vid-modal')"> Close </button>
           </div>
         </div>
       </div>
@@ -147,11 +148,11 @@
                             <div class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
                               <h3 class="text-3xl font-semibold uppercase text-center"> Submit for whitelist spot </h3>
                             </div>
-                            <div class="relative p-6 flex-auto">
+                            <div class="relative p-2 flex-auto">
                               <script src="https://sheetdb.io/s/f/hphhjnxow9gph.js"></script>
                             </div>
-                            <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-                              <button class="text-black background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('wl-modal')"> Close </button>
+                            <div class="flex items-center justify-end p-2 border-t border-solid border-slate-200 rounded-b">
+                              <button class="background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('wl-modal')"> Close </button>
                             </div>
                           </div>
                         </div>
