@@ -44,14 +44,17 @@
     <div id="loader">
       <h1 class="welcome">WELCOME HERO!</h1>
     </div>
-    <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="vid-modal">
+    <div class="hidden modal-anim fadeInBottom overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="vid-modal">
       <div class="relative w-auto my-6 mx-auto max-w-3xl">
         <div class="border-4 border-gray-700 relative flex flex-col w-full bg-red-400 outline-none focus:outline-none">
-          <div class="relative flex-auto">
-            <iframe src="https://drive.google.com/file/d/1ZcUihwPSoQJa-6dBtxK0wnoGL_l0PhrN/preview" width="410" height="260" allow="autoplay"></iframe>
+          <div class="inline md:hidden flex-auto">
+            <iframe src="https://drive.google.com/file/d/1ZcUihwPSoQJa-6dBtxK0wnoGL_l0PhrN/preview" width="380" height="220" allow="autoplay"></iframe>
           </div>
-          <div class="flex items-center justify-end p-2 border-t border-solid border-slate-200 rounded-b">
-            <button class="background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('vid-modal')"> Close </button>
+          <div class="hidden md:inline flex-auto">
+            <iframe src="https://drive.google.com/file/d/1ZcUihwPSoQJa-6dBtxK0wnoGL_l0PhrN/preview" width="640" height="360" allow="autoplay"></iframe>
+          </div>
+          <div class="flex items-center justify-center p-2">
+            <button class="background-transparent hover:bg-gray-900 font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1" type="button" onclick="toggleModal('vid-modal')"> Close </button>
           </div>
         </div>
       </div>
@@ -146,17 +149,17 @@
                         </svg>
                         <span>WHITELIST</span>
                       </button>
-                      <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="wl-modal">
+                      <div class="hidden modal-anim overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="wl-modal">
                         <div class="relative w-auto my-6 mx-auto max-w-3xl">
                           <div class="border-4 border-gray-700 relative flex flex-col w-full bg-red-400 outline-none focus:outline-none">
-                            <div class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                            <div class="flex items-start justify-between p-2">
                               <h3 class="text-3xl font-semibold uppercase text-center"> Submit for whitelist spot </h3>
                             </div>
-                            <div class="relative p-2 flex-auto">
+                            <div class="relative flex-auto">
                               <script src="https://sheetdb.io/s/f/hphhjnxow9gph.js"></script>
                             </div>
-                            <div class="flex items-center justify-end p-2 border-t border-solid border-slate-200 rounded-b">
-                              <button class="background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('wl-modal')"> Close </button>
+                            <div class="flex items-center justify-center p-2">
+                              <button class="background-transparent hover:bg-gray-900 font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1" type="button" onclick="toggleModal('wl-modal')"> Close </button>
                             </div>
                           </div>
                         </div>
@@ -169,7 +172,7 @@
                         <span>MINT</span>
                       </button>
                     </div>
-                    <div id="minting" class="cmodal">
+                    <div id="minting" class="cmodal modal-anim">
                       <div class="cmodal-content" id="minting-dapp">
                         <span class="close"></span>
                       </div>
