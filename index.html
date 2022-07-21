@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;500&family=Cairo&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9fcb5d40d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/build/main.css">
+    <script src="/build/main.js"></script>
     <script>
       function toggleModal(modalID) {
         document.getElementById(modalID).classList.toggle("hidden");
@@ -76,7 +77,16 @@
         </div>
       </div>
     </div>
-    <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="vid-modal-backdrop"></div>
+    <div class="hidden modal-anim fadeInBottom overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="mint-modal">
+      <div class="relative w-auto my-6 mx-auto max-w-3xl">
+        <div id="minting-dapp"></div>
+        <div class="flex items-center justify-center p-2">
+          <button class="background-transparent hover:bg-gray-900 font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1" type="button" onclick="toggleModal('mint-modal')"> Close </button>
+        </div>
+      </div>
+    </div>
+    <div class="hidden bg-opacity-75 fixed inset-0 z-40 bg-black backdrop-blur-md" id="vid-modal-backdrop"></div>
+    <div class="hidden bg-opacity-75 fixed inset-0 z-40 bg-black backdrop-blur-md" id="mint-modal-backdrop"></div>
     <div style="display:none;" id="home" class="animate-bottom">
       <div class="z-30 relative items-center justify-center w-full h-full overflow-auto">
         <div class="inset-0 h-screen bg-cover bg-center" style="background-image: url('/build/images/bg.png');">
@@ -110,29 +120,9 @@
                     </svg>
                   </div>
                   <div>
-                    <p class="text-sm text-yellow-500">Listen to <a href="https://twitter.com/itsblockparty" target="_blank">@itsblockparty</a> Podcast <a href="https://open.spotify.com/episode/5U7tZr9YlFJh8uHVs8sHE8?si=Ux9jhANfTgy9oo0T_l-xAA" target="_blank">HERE</a> to know ELENOIR Project deeper </p>
+                    <p class="text-sm text-yellow-500 font-bold">Reminder! Mint date is on July 23rd! </p>
                   </div>
                   <p class="flex cursor-pointer" type="button" onclick="toggleModal('alert2')">
-                    <svg class="text-yellow-500 text-xl" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M685.4 354.8c0-4.4-3.6-8-8-8l-66 .3L512 465.6l-99.3-118.4-66.1-.3c-4.4 0-8 3.5-8 8 0 1.9.7 3.7 1.9 5.2l130.1 155L340.5 670a8.32 8.32 0 0 0-1.9 5.2c0 4.4 3.6 8 8 8l66.1-.3L512 564.4l99.3 118.4 66 .3c4.4 0 8-3.5 8-8 0-1.9-.7-3.7-1.9-5.2L553.5 515l130.1-155c1.2-1.4 1.8-3.3 1.8-5.2z"></path>
-                      <path d="M512 65C264.6 65 64 265.6 64 513s200.6 448 448 448 448-200.6 448-448S759.4 65 512 65zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path>
-                    </svg>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div id="alert3" class="ml-auto mr-3 flex flex-col gap-2 w-72 border-b-4 border-b-red-400">
-              <div class="bg-yellow-50 text-yellow-900 px-4 py-3" role="alert">
-                <div class="flex">
-                  <div>
-                    <svg class="fill-current h-6 w-6 text-yellow-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                      <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="text-sm text-yellow-500">We just launched our <a href="https://opensea.io/collection/elenoir-genesis" target="_blank">GENESIS Collection</a>! <a href="https://twitter.com/ElenoirTeam/status/1531639750095998977?s=20&t=7oG_Mdft1N34N_2IpfXS0g" target="_blank">Read more</a></p>
-                  </div>
-                  <p class="flex cursor-pointer" type="button" onclick="toggleModal('alert3')">
                     <svg class="text-yellow-500 text-xl" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                       <path d="M685.4 354.8c0-4.4-3.6-8-8-8l-66 .3L512 465.6l-99.3-118.4-66.1-.3c-4.4 0-8 3.5-8 8 0 1.9.7 3.7 1.9 5.2l130.1 155L340.5 670a8.32 8.32 0 0 0-1.9 5.2c0 4.4 3.6 8 8 8l66.1-.3L512 564.4l99.3 118.4 66 .3c4.4 0 8-3.5 8-8 0-1.9-.7-3.7-1.9-5.2L553.5 515l130.1-155c1.2-1.4 1.8-3.3 1.8-5.2z"></path>
                       <path d="M512 65C264.6 65 64 265.6 64 513s200.6 448 448 448 448-200.6 448-448S759.4 65 512 65zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path>
@@ -166,8 +156,7 @@
                         </svg>
                         <span>DOCS</span>
                       </button>
-                      <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="wl-modal-backdrop"></div>
-                      <button onclick="window.location.href='/mint';" class="text-gray-900 opacity-75 bg-gray-100 hover:bg-pink-900 hover: text-sm font-bold py-2 px-4 rounded inline-flex items-center">
+                      <button onclick="toggleModal('mint-modal')" class="text-gray-900 opacity-75 bg-gray-100 hover:bg-pink-900 hover: text-sm font-bold py-2 px-4 rounded inline-flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M24 12l-12-9v5h-12v8h12v5l12-9z" />
                         </svg>
